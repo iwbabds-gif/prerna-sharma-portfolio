@@ -39,43 +39,43 @@ nav{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.9);backdrop-fi
 @media(max-width:760px){.nav-links{display:none}}
 
 /* HERO */
-.hero{padding:110px 0 90px}
-.hero-tag{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.hero{padding:130px 0 110px}
+.hero-tag{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;display:flex;align-items:center;gap:10px;font-weight:500}
 .hero-tag i{width:8px;height:8px;border:2px solid var(--olive);border-radius:50%;display:inline-block}
-.hero h1{font-size:clamp(42px,7.5vw,76px);line-height:1.06;letter-spacing:-.02em}
+.hero h1{font-size:clamp(42px,7.5vw,76px);line-height:1.1;letter-spacing:-.02em}
 .hero h1 em{font-style:normal;color:var(--olive)}
-.hero-role{margin-top:18px;font-size:16px;color:var(--muted);line-height:1.75}
-.hero-role b{font-weight:600;color:var(--ink)}
-.tagline{margin-top:26px;max-width:640px;font-size:clamp(17px,2.2vw,21px);line-height:1.6;border-left:2px solid var(--clay);padding-left:18px;color:#3a382f}
-.tagline b{font-weight:600}
-.hero-cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border:1.5px solid var(--ink);border-radius:999px;font-size:14px;font-weight:500;transition:all .2s}
-.btn:hover{background:var(--ink);color:var(--paper)}
-.btn.olive{border-color:var(--olive);color:var(--olive)}
-.btn.olive:hover{background:var(--olive);color:#fff}
-.domains{margin-top:64px}
-.domains .d-label{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:16px;display:flex;align-items:center;gap:10px}
-.domains .d-label::after{content:"";flex:1;height:1.5px;background:var(--line)}
-.d-chips{display:flex;flex-wrap:wrap;gap:12px}
+.hero-types{margin-top:38px;display:flex;flex-wrap:wrap;gap:12px}
 .d-chip{border:1.5px solid var(--ink);border-radius:999px;padding:9px 20px;font-size:13.5px;font-weight:500;display:inline-flex;align-items:center;gap:9px;transition:all .2s;cursor:default}
 .d-chip i{width:8px;height:8px;border-radius:50%;border:2px solid var(--olive);display:inline-block;flex-shrink:0}
 .d-chip:nth-child(even) i{border-color:var(--clay)}
 .d-chip:hover{background:var(--ink);color:var(--paper)}
 
-/* WHY ME */
-#why{border-top:1.5px dashed var(--line)}
-.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:44px}
-@media(max-width:720px){.why-grid{grid-template-columns:1fr}}
-.why-card{border:1.5px solid var(--ink);border-radius:16px;padding:26px 24px;position:relative;background:transparent;transition:box-shadow .25s,transform .25s;display:flex;flex-direction:column}
-.why-card:hover{transform:translateY(-4px);box-shadow:6px 6px 0 var(--olive-soft)}
-.why-card .idx{position:absolute;top:20px;right:22px;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.1em}
-.why-card .ic{width:42px;height:42px;border:1.5px solid var(--olive);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-.why-card .ic svg{width:20px;height:20px;stroke:var(--olive);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.why-card h3{font-size:17px;margin-bottom:8px}
-.why-card p{font-size:14px;color:#4a483f;line-height:1.65}
-.why-card:nth-child(4) .ic{border-color:var(--clay)}
-.why-card:nth-child(4) .ic svg{stroke:var(--clay)}
-.why-card:nth-child(4):hover{box-shadow:6px 6px 0 var(--clay-soft)}
+/* CAREER CHAPTERS */
+.chapter{border-top:1.5px dashed var(--line);padding-top:96px}
+.chapter+.chapter{padding-top:0}
+.chapter-meta{font-size:14px;color:var(--muted);margin-top:6px;font-weight:500}
+.chapter-stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.chapter-result{margin-top:22px;font-size:15px;color:#3a382f;border-left:2px solid var(--clay);padding-left:16px;max-width:760px;line-height:1.6}
+.chapter-result b{font-weight:600}
+.chapter-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:44px;border:1.5px solid var(--ink);border-radius:18px;overflow:hidden}
+@media(max-width:780px){.chapter-grid{grid-template-columns:1fr}}
+.chapter-col{padding:26px 28px}
+.chapter-col.wrong{background:repeating-linear-gradient(135deg,var(--clay-soft) 0 2px,transparent 2px 13px);background-color:rgba(245,233,227,.35)}
+.chapter-col.learned{background:repeating-linear-gradient(135deg,var(--olive-soft) 0 2px,transparent 2px 13px);background-color:rgba(237,239,227,.35)}
+.chapter-col+.chapter-col{border-left:1.5px dashed var(--line)}
+@media(max-width:780px){.chapter-col+.chapter-col{border-left:none;border-top:1.5px dashed var(--line)}}
+.chapter-col h4{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.chapter-col h4 i{width:8px;height:8px;border-radius:2px;border:2px solid var(--clay);display:inline-block}
+.chapter-col.learned h4 i{border-color:var(--olive)}
+.chapter-col ul{list-style:none}
+.chapter-col li{font-size:13.5px;color:#3d3b33;padding:0 0 16px 22px;position:relative;line-height:1.65}
+.chapter-col li:last-child{padding-bottom:0}
+.chapter-col.wrong li::before{content:"";position:absolute;left:0;top:8px;width:9px;height:9px;border:1.5px solid var(--clay);border-radius:3px}
+.chapter-col.learned li::before{content:"";position:absolute;left:0;top:8px;width:9px;height:9px;border:1.5px solid var(--olive);border-radius:3px}
+.chapter-col b{font-weight:600;color:var(--ink)}
+.chapter-shaped{margin-top:28px;border:1.5px solid var(--olive);border-radius:16px;padding:22px 26px;background:transparent}
+.chapter-shaped .sh-label{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive);font-weight:600;margin-bottom:8px}
+.chapter-shaped p{font-size:14.5px;color:#3a382f;line-height:1.65}
 </style>
 </head>
 <body>
@@ -83,377 +83,119 @@ nav{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.9);backdrop-fi
 <nav>
   <div class="nav-in">
     <a class="logo" href="#top">PRERNA<span>.</span>SHARMA</a>
-    <div class="nav-links">
-      <a href="#why">Why me</a>
-      <a href="#projects">Projects</a>
-      <a href="#different">Uniqueness</a>
-      <a href="#before">Before work</a>
-      <a href="#contact">Contact</a>
-    </div>
   </div>
 </nav>
 
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="hero-tag rv"><i></i>GTM · Growth · Brand · AI Ops</div>
-    <h1 class="rv">I build.<br>Things <em>and myself</em>.</h1>
-    <p class="hero-role rv"><b>Prerna Sharma</b><br>Senior Manager, Sales &amp; Marketing<br>smartSense Consulting Solutions Pvt. Ltd. · <a href="https://www.smartsensesolutions.com" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px">smartsensesolutions.com</a></p>
-    <p class="tagline rv">Driven by <b>ambition</b>, obsessed with <b>growth</b>, and grounded by <b>life</b>.</p>
-    <div class="hero-cta rv">
-      <a class="btn olive" href="#projects">See the work ↓</a>
-      <a class="btn" href="#contact">Get in touch</a>
-    </div>
-    <div class="domains rv">
-      <div class="d-label">What I have worked on</div>
-      <div class="d-chips">
-        <span class="d-chip"><i></i>Owned quarterly &amp; monthly paid funnel strategy</span>
-        <span class="d-chip"><i></i>Built brand strategy &amp; positioning from scratch</span>
-        <span class="d-chip"><i></i>Product marketing</span>
-        <span class="d-chip"><i></i>Performance marketing</span>
-        <span class="d-chip"><i></i>Marketing automation &amp; AI ops</span>
-        <span class="d-chip"><i></i>ABM &amp; B2B GTM strategy</span>
-        <span class="d-chip"><i></i>Content, SEO &amp; AEO/GEO</span>
-        <span class="d-chip"><i></i>0→1 product GTM</span>
-        <span class="d-chip"><i></i>CRM &amp; lead operations</span>
-        <span class="d-chip"><i></i>Agency &amp; vendor management</span>
-      </div>
+    <div class="hero-tag rv"><i></i>4 years of professional journey</div>
+    <h1 class="rv">3 important parts.<br><em>GTM for 0→1.</em></h1>
+    <div class="hero-types rv">
+      <span class="d-chip"><i></i>B2B SaaS</span>
+      <span class="d-chip"><i></i>Technology Services Sales</span>
+      <span class="d-chip"><i></i>Consumer IoT Brand</span>
     </div>
   </div>
 </header>
 
-<section id="why">
+<section id="intro" class="chapter">
   <div class="wrap">
-    <div class="eyebrow rv">Why me</div>
-    <h2 class="sec-title rv">I raise the bar.</h2>
-    <p class="sec-sub rv">For myself and others.</p>
-    <div class="why-grid">
-      <div class="why-card rv">
-        <span class="idx">/01</span>
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 10l7-7 7 7"/></svg></div>
-        <h3>All in. 100%.</h3>
-        <p>Growth and career sit at the center of my life. I put work first. Honestly, sometimes too much, and I'm actively working on that balance. But you'll never question my commitment.</p>
+    <div class="eyebrow rv">Three parts, one organisation</div>
+    <h2 class="sec-title rv">3 different parts, one organisation.</h2>
+    <p class="chapter-result rv">I worked with <a href="https://www.smartsensesolutions.com/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:inherit">smartSense Solutions</a> for 4 years 3 months, and worked on sales and marketing for our services business and two other in-house products.</p>
+  </div>
+</section>
+
+<section id="part1" class="chapter">
+  <div class="wrap">
+    <div class="eyebrow rv">Part · 01 · B2B SaaS</div>
+    <h2 class="sec-title rv">HRTech product for fresh graduate hiring from colleges.</h2>
+    <p class="chapter-meta rv">2 years &nbsp;|&nbsp; 0–1 Scale &nbsp;|&nbsp; B2B SaaS</p>
+    <div class="chapter-stats rv">
+      <span class="d-chip"><i></i>10,000+ colleges onboarded</span>
+      <span class="d-chip"><i></i>6,000+ cold calls</span>
+      <span class="d-chip"><i></i>1,500+ campus drives</span>
+      <span class="d-chip"><i></i>1,200+ graduates placed</span>
+      <span class="d-chip"><i></i>50+ product demo calls</span>
+      <span class="d-chip"><i></i>80+ workshops/competitions</span>
+    </div>
+    <p class="chapter-result rv"><b>Results:</b> 0 → $100K (₹80L+) revenue.<br><b>Ownership:</b> Day-to-day operations, end-to-end customer project delivery.</p>
+    <div class="chapter-grid">
+      <div class="chapter-col wrong rv"><h4><i></i>Why it didn't scale</h4>
+        <ul>
+          <li><b>Slow adoption due to product rigidity</b> — Mandatory college onboarding before a student could sign up caused a long institutional approval cycle.</li>
+          <li><b>Supply scaled while demand did not</b> — Supply-side operations scaled into a system. Revenue and the demand side did not, due to resource constraints.</li>
+          <li><b>The shutdown</b> — After two years, GenAI shifted the org's focus. The product was bleeding money and was closed.</li>
+        </ul>
       </div>
-      <div class="why-card rv">
-        <span class="idx">/02</span>
-        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <h3>I talk potential, not just tasks.</h3>
-        <p>I don't stay inside the brief. I keep asking: why will this win, where will it break, what's around the corner, and how do we stack the odds of success.</p>
-      </div>
-      <div class="why-card rv">
-        <span class="idx">/03</span>
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 17l6-6 4 4 6-8"/><path d="M4 7h4v4"/></svg></div>
-        <h3>Versatile by design.</h3>
-        <p>Creative and intuitive in strategy; structured, aggressive, and serious in execution. A storyteller with abstract depth who also gets genuinely mesmerized by data. Individual contributor one day, leading from the front the next.</p>
-      </div>
-      <div class="why-card rv">
-        <span class="idx">/04</span>
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 10l-5.5 2.5L12 18l-2.5-5.5L4 10l5.5-1.5z"/></svg></div>
-        <h3>Character and values.</h3>
-        <p>I'd rather fail doing it right than win doing it cheap. High work ethics, no shortcuts. Hard things don't scare me; they're how character gets built.</p>
+      <div class="chapter-col learned rv"><h4><i></i>What I learned</h4>
+        <ul>
+          <li><b>Narrative matters</b> — We switched from selling a placement management tool to a college discovery tool for employers. This increased adoption on the college side.</li>
+          <li><b>Effort scales linearly. Systems scale exponentially</b> — Ground efforts don't scale if not built into systems. Input and output stay close together, with no compounding.</li>
+          <li><b>Resourced to exist ≠ resourced to win</b> — Enough to keep going is not enough to break through. Resource constraints can kill a product faster than the market.</li>
+        </ul>
       </div>
     </div>
+    <div class="chapter-shaped rv"><div class="sh-label">Impact</div><p>A complete product autopsy. Watching a 0→1 born, plateau, and shut down end to end has brought me some business sense and a little wisdom.</p></div>
+  </div>
+</section>
+
+<section id="part2" class="chapter">
+  <div class="wrap">
+    <div class="eyebrow rv">Part · 02 · Technology Services Sales</div>
+    <h2 class="sec-title rv">B2B technology services GTM.</h2>
+    <p class="chapter-meta rv">1 year &nbsp;|&nbsp; 1–10 Scale &nbsp;|&nbsp; Enterprise Sales</p>
+    <div class="chapter-stats rv">
+      <span class="d-chip"><i></i>$1M+ revenue across 4 deals</span>
+      <span class="d-chip"><i></i>100+ sales enablement assets</span>
+    </div>
+    <div class="chapter-grid">
+      <div class="chapter-col wrong rv"><h4><i></i>What went wrong / limitations</h4>
+        <ul>
+          <li><b>An enablement layer, not an engine</b> — Sales was founder-led. Support work sharpens deals but does not compound into a repeatable demand system.</li>
+        </ul>
+      </div>
+      <div class="chapter-col learned rv"><h4><i></i>What I learned</h4>
+        <ul>
+          <li><b>How deals actually move</b> — A year inside proposals maps where deals stall and which collateral moves them, and the deal dynamics.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-shaped rv"><div class="sh-label">Impact</div><p>It sent me downstream for good, and helped me understand the importance of systems for scale.</p></div>
+  </div>
+</section>
+
+<section id="part3" class="chapter">
+  <div class="wrap">
+    <div class="eyebrow rv">Part · 03 · Consumer IoT Brand</div>
+    <h2 class="sec-title rv">Connected home ecosystem with centralised control.</h2>
+    <p class="chapter-meta rv">1 year &nbsp;|&nbsp; B2C &nbsp;|&nbsp; 0–1 Scale</p>
+    <div class="chapter-stats rv">
+      <span class="d-chip"><i></i>5M+ reach</span>
+      <span class="d-chip"><i></i>20,000+ high-intent leads</span>
+      <span class="d-chip"><i></i>2,000+ inbound leads</span>
+      <span class="d-chip"><i></i>20X brand engagement</span>
+      <span class="d-chip"><i></i>40X website visits</span>
+    </div>
+    <p class="chapter-result rv"><b>Results:</b> ₹25L → ₹2Cr (~$30K → $240K) ARR.<br><b>Ownership:</b> Monthly/quarterly Ads strategy &amp; budget management, end-to-end brand management.</p>
+    <div class="chapter-grid">
+      <div class="chapter-col wrong rv"><h4><i></i>Limitations</h4>
+        <ul>
+          <li><b>Brand lagged behind the funnel</b> — Growth had already outrun the branding.</li>
+          <li><b>Paid stopped absorbing</b> — Spend kept climbing, the conversion didn't. Sales capacity and process hadn't been built to match the top of funnel.</li>
+        </ul>
+      </div>
+      <div class="chapter-col learned rv"><h4><i></i>What I learned</h4>
+        <ul>
+          <li><b>Things grow in parallel, or they don't</b> — Funnel, brand, and ops must scale together. One lags, nothing scales.</li>
+          <li><b>Before scaling the funnel, fix the leaks</b> — Leads outran capacity. Branding inconsistency and thin resources leaked lead-to-demo and demo-to-conversion.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-shaped rv"><div class="sh-label">Impact</div><p>The three parts became one education — model-level growth reading from Part 1, full-funnel thinking from Part 2. Part 3 is where both met a real revenue number and held. Full-chain ownership, reach to close.</p></div>
   </div>
 </section>
 <style>
-/* PROJECTS */
-#projects{background:#F6F4EE;border-top:1.5px solid var(--line);border-bottom:1.5px solid var(--line)}
-.proj-list{display:flex;flex-direction:column;gap:28px;margin-top:48px}
-.proj{border:1.5px solid var(--ink);border-radius:18px;background:var(--paper);overflow:hidden;transition:transform .25s,box-shadow .25s}
-.proj:hover{transform:translateY(-3px);box-shadow:8px 8px 0 rgba(95,107,60,.14)}
-.proj-head{padding:26px 28px 20px}
-.proj-no{font-size:12px;font-weight:600;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
-.proj h3{font-size:clamp(18px,2.4vw,22px);margin-top:6px;line-height:1.35}
-.proj h3 span{color:var(--muted);font-weight:400}
-.proj-narr{font-size:14.5px;color:#4a483f;margin-top:10px;max-width:760px}
-.proj-narr b{font-weight:600;color:var(--ink)}
-/* DNA split meter */
-.dna{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:16px 28px;border-top:1.5px dashed var(--line);border-bottom:1.5px dashed var(--line)}
-.own{font-size:11px;font-weight:600;letter-spacing:.1em;padding:5px 14px;border-radius:999px;border:1.5px solid var(--olive);color:var(--olive);white-space:nowrap}
-.own.self{background:var(--olive);color:#fff;border-color:var(--olive)}
-.meter{flex:1;min-width:240px}
-.meter .lbl{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.06em;margin-bottom:6px;color:var(--muted)}
-.meter .lbl .s-l{color:var(--olive);font-weight:600}
-.meter .lbl .s-r{font-weight:500}
-.split{display:flex;height:8px;border-radius:99px;overflow:hidden;border:1.5px solid var(--olive);position:relative}
-.split .seg-s{background:var(--olive)}
-.split .seg-x{background:var(--paper);background-image:repeating-linear-gradient(-45deg,var(--line) 0 3px,transparent 3px 7px)}
-.split .knot{position:absolute;top:50%;transform:translate(-50%,-50%);width:14px;height:14px;border-radius:50%;background:var(--paper);border:3px solid var(--olive)}
-/* body: outcomes + work */
-.proj-body{display:grid;grid-template-columns:0.9fr 1.1fr;gap:0}
-@media(max-width:780px){.proj-body{grid-template-columns:1fr}}
-.pb-col{padding:22px 28px 24px}
-.pb-col:not(.qual){background:repeating-linear-gradient(135deg,var(--olive-soft) 0 2px,transparent 2px 13px);background-color:rgba(237,239,227,.35)}
-.pb-col+.pb-col{border-left:1.5px dashed var(--line)}
-@media(max-width:780px){.pb-col+.pb-col{border-left:none;border-top:1.5px dashed var(--line)}}
-.pb-col h4{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:8px}
-.pb-col h4 i{width:8px;height:8px;border-radius:2px;border:2px solid var(--olive);display:inline-block}
-.pb-col.qual h4 i{border-color:var(--clay)}
-.outcomes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:420px){.outcomes{grid-template-columns:1fr}}
-.oc{background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:12px 14px}
-.oc .n{font-size:20px;font-weight:600;line-height:1.2;letter-spacing:-.01em}
-.oc .n em{font-style:normal;color:var(--olive)}
-.oc .t{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.45}
-.worklist{list-style:none}
-.worklist li{font-size:13.5px;color:#3d3b33;padding:0 0 12px 22px;position:relative;line-height:1.65}
-.worklist li:last-child{padding-bottom:0}
-.worklist li::before{content:"";position:absolute;left:0;top:8px;width:9px;height:9px;border:1.5px solid var(--clay);border-radius:3px}
-.worklist b{font-weight:600;color:var(--ink)}
-/* stack row */
-.stackrow{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:14px 28px 18px;border-top:1.5px dashed var(--line)}
-.stackrow .sl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted);white-space:nowrap}
-.stk{font-size:12px;border:1.5px solid var(--line);border-radius:999px;padding:3px 12px;color:#4a483f;white-space:nowrap}
-.proj.finale{border-color:var(--olive)}
-.proj.finale .proj-no{color:var(--olive)}
-@media(max-width:600px){.proj-head,.dna,.pb-col,.stackrow{padding-left:20px;padding-right:20px}}
-</style>
-
-<section id="projects">
-  <div class="wrap">
-    <div class="eyebrow rv">Projects</div>
-    <h2 class="sec-title rv">Experience in 360-degree marketing, with high ownership.</h2>
-    <p class="sec-sub rv">Every project carries a Role DNA strip. The olive share of the bar is strategy; the hatched share is execution. The badge tells you how much of it was mine.</p>
-
-    <div class="proj-list">
-
-      <article class="proj rv">
-        <div class="proj-head">
-          <div class="proj-no">Project · 01</div>
-          <h3>B2C Demand Generation <span>| ₹25L → ₹2Cr revenue engine</span></h3>
-          <p class="proj-narr">Owned the paid growth engine for a consumer IoT brand, end-to-end: from strategy with leadership to daily optimization in Ads Manager.</p>
-        </div>
-        <div class="dna">
-          <span class="own">OWNERSHIP 100%</span>
-          <div class="meter"><div class="lbl"><span class="s-l">Strategy</span><span class="s-r">Execution</span></div>
-            <div class="split"><div class="seg-s" style="width:70%"></div><div class="seg-x" style="width:30%"></div><span class="knot" style="left:70%"></span></div>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="pb-col"><h4><i></i>Outcomes</h4>
-            <div class="outcomes">
-              <div class="oc"><div class="n">₹25L <em>→</em> ₹2Cr</div><div class="t">Revenue directly impacted</div></div>
-              <div class="oc"><div class="n">20,000+</div><div class="t">High-intent leads</div></div>
-              <div class="oc"><div class="n">5M+</div><div class="t">Reach</div></div>
-              <div class="oc"><div class="n">₹3–5L<span style="font-size:13px">/mo</span></div><div class="t">Budget managed</div></div>
-            </div>
-          </div>
-          <div class="pb-col qual"><h4><i></i>The work</h4>
-            <ul class="worklist">
-              <li>Built the <b>monthly &amp; quarterly paid funnel strategy</b>: budget allocation, audience roadmap, campaign architecture. Then executed it hands-on.</li>
-              <li>Defined <b>MQL/SQL frameworks</b>; optimized CPL &amp; CTR with continuous A/B testing across creatives, audiences &amp; regions.</li>
-              <li>Owned <b>lead routing &amp; CRM hygiene</b> with a sales feedback loop; weekly and monthly analytics to leadership.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="stackrow"><span class="sl">Stack</span><span class="stk">Meta Ads</span><span class="stk">Meta Ads Library</span><span class="stk">Zoho CRM</span><span class="stk">Google Analytics</span><span class="stk">Claude · ChatGPT (content &amp; research)</span></div>
-      </article>
-
-      <article class="proj rv">
-        <div class="proj-head">
-          <div class="proj-no">Project · 02</div>
-          <h3>Enterprise &amp; Startup ABM <span>| B2B services, C-suite</span></h3>
-          <p class="proj-narr">Took B2B GenAI services to enterprise and startup buyers across the US and ANZ. Pipeline built from cold to closed.</p>
-        </div>
-        <div class="dna">
-          <span class="own">OWNERSHIP 30%</span>
-          <div class="meter"><div class="lbl"><span class="s-l">Strategy</span><span class="s-r">Execution</span></div>
-            <div class="split"><div class="seg-s" style="width:30%"></div><div class="seg-x" style="width:70%"></div><span class="knot" style="left:30%"></span></div>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="pb-col"><h4><i></i>Outcomes</h4>
-            <div class="outcomes">
-              <div class="oc"><div class="n">10+</div><div class="t">Enterprise &amp; startup deals, combined</div></div>
-              <div class="oc"><div class="n">4X</div><div class="t">Revenue growth impacted</div></div>
-              <div class="oc"><div class="n">100+</div><div class="t">Sales enablement assets</div></div>
-              <div class="oc"><div class="n">₹6L<span style="font-size:13px">/mo</span></div><div class="t">LinkedIn Ads budget</div></div>
-            </div>
-          </div>
-          <div class="pb-col qual"><h4><i></i>The work</h4>
-            <ul class="worklist">
-              <li>Ran <b>integrated ABM targeting C-suite executives</b> at early-stage startups and enterprises.</li>
-              <li>Built enablement that sells: <b>technical case studies, company decks, deal-specific proposals, pre-sales material</b>.</li>
-              <li>Co-owned monthly/quarterly strategy &amp; budgets with leadership; translated complex GenAI capability into <b>outcome-driven buyer narratives</b>.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="stackrow"><span class="sl">Stack</span><span class="stk">LinkedIn</span><span class="stk">Campaign Manager</span><span class="stk">Sales Navigator</span><span class="stk">Apollo CRM</span><span class="stk">Google Analytics</span><span class="stk">Canva · Figma</span><span class="stk">Claude · ChatGPT</span></div>
-      </article>
-
-      <article class="proj rv">
-        <div class="proj-head">
-          <div class="proj-no">Project · 03</div>
-          <h3>Brand Strategy &amp; Full-Scale Revamp <span>| 0 → 1M+ organic reach</span></h3>
-          <p class="proj-narr">Defined who DOO, a smart-home IoT brand, is before scaling how loud it speaks: positioning, persona, and tone, built from scratch.</p>
-        </div>
-        <div class="dna">
-          <span class="own">OWNERSHIP 100%</span>
-          <div class="meter"><div class="lbl"><span class="s-l">Strategy</span><span class="s-r">Execution</span></div>
-            <div class="split"><div class="seg-s" style="width:50%"></div><div class="seg-x" style="width:50%"></div><span class="knot" style="left:50%"></span></div>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="pb-col"><h4><i></i>Outcomes</h4>
-            <div class="outcomes">
-              <div class="oc"><div class="n">1M+</div><div class="t">Organic reach</div></div>
-              <div class="oc"><div class="n">20X</div><div class="t">Engagement lift</div></div>
-              <div class="oc"><div class="n">700+</div><div class="t">Organic inbound leads</div></div>
-              <div class="oc"><div class="n">10X</div><div class="t">Inbound enquiry jump</div></div>
-            </div>
-          </div>
-          <div class="pb-col qual"><h4><i></i>The work</h4>
-            <ul class="worklist">
-              <li>Authored DOO's <b>brand positioning, persona &amp; voice/tone framework</b>, aligned to company values and long-term vision.</li>
-              <li>Led the full <b>Instagram &amp; website revamp</b>: feed identity, content system, messaging, inbound enquiry communication.</li>
-              <li>Directed video production <b>both ways</b>: traditional shoots (scripting, casting, on-site) and <b>AI-generated video pipelines</b>.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="stackrow"><span class="sl">Stack</span><span class="stk">Instagram</span><span class="stk">Canva · Figma</span><span class="stk">Video editing tools</span><span class="stk">AI image &amp; video models</span><span class="stk">Google Analytics</span><span class="stk">Claude · ChatGPT</span></div>
-      </article>
-
-      <article class="proj rv">
-        <div class="proj-head">
-          <div class="proj-no">Project · 04</div>
-          <h3>B2B Technology Marketing <span>| content, AEO/GEO &amp; web</span></h3>
-          <p class="proj-narr">Built the organic demand engine for a technology services brand: content, search, and web working as one inbound system.</p>
-        </div>
-        <div class="dna">
-          <span class="own">OWNERSHIP 100%</span>
-          <div class="meter"><div class="lbl"><span class="s-l">Strategy</span><span class="s-r">Execution</span></div>
-            <div class="split"><div class="seg-s" style="width:50%"></div><div class="seg-x" style="width:50%"></div><span class="knot" style="left:50%"></span></div>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="pb-col"><h4><i></i>Outcomes</h4>
-            <div class="outcomes">
-              <div class="oc"><div class="n">10K <em>→</em> 35K+</div><div class="t">LinkedIn followers, organic</div></div>
-              <div class="oc"><div class="n">10X</div><div class="t">Engagement increase</div></div>
-              <div class="oc"><div class="n">32+</div><div class="t">Web pages shipped</div></div>
-              <div class="oc"><div class="n">4 mo</div><div class="t">Website build &amp; launch</div></div>
-            </div>
-          </div>
-          <div class="pb-col qual"><h4><i></i>The work</h4>
-            <ul class="worklist">
-              <li>Led the website build across technology, case studies &amp; culture, with analytics, SEO and <b>AI-optimized (AEO/GEO) content</b>.</li>
-              <li>Ran blogs, social &amp; organic search as one <b>inbound demand-generation engine</b>.</li>
-              <li>Coordinated technical &amp; non-technical stakeholders with <b>agile project management</b>.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="stackrow"><span class="sl">Stack</span><span class="stk">Next.js · Strapi</span><span class="stk">Python · REST API</span><span class="stk">DevOps</span><span class="stk">Canva · Figma</span><span class="stk">Claude · ChatGPT (content &amp; research)</span></div>
-      </article>
-
-      <article class="proj rv">
-        <div class="proj-head">
-          <div class="proj-no">Project · 05</div>
-          <h3>0→1 Product GTM <span>| $0 → $100K+ in 24 months</span></h3>
-          <p class="proj-narr">Core team member taking an early-talent product from zero (no playbook, no audience, no revenue) to a national footprint.</p>
-        </div>
-        
-        <div class="dna">
-          <span class="own">OWNERSHIP 80%</span>
-          <div class="meter"><div class="lbl"><span class="s-l">Strategy</span><span class="s-r">Execution</span></div>
-            <div class="split"><div class="seg-s" style="width:20%"></div><div class="seg-x" style="width:80%"></div><span class="knot" style="left:20%"></span></div>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="pb-col"><h4><i></i>Outcomes</h4>
-            <div class="outcomes">
-              <div class="oc"><div class="n">15,000+</div><div class="t">Signups, pure organic activation</div></div>
-              <div class="oc"><div class="n">$100K+</div><div class="t">Revenue in 24 months, from $0</div></div>
-              <div class="oc"><div class="n">1,500+</div><div class="t">Campus drives conducted</div></div>
-              <div class="oc"><div class="n">1,200+</div><div class="t">Students placed</div></div>
-            </div>
-          </div>
-          <div class="pb-col qual"><h4><i></i>The work</h4>
-            <ul class="worklist">
-              <li>Ran <b>200+ workshops</b> and <b>100+ case competitions</b> across India; built brand presence at regional scale.</li>
-              <li>Led <b>80+ product demo calls</b>, helping close <b>10+ institutional deals</b>; shaped product marketing across 30+ features, 6 modules.</li>
-              <li>Built the product website from scratch with analytics, SEO &amp; AEO/GEO; developed <b>50+ sales &amp; marketing assets</b>.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="stackrow"><span class="sl">Stack</span><span class="stk">Manual operations, on-ground &amp; hands-on</span></div>
-      </article>
-
-      <article class="proj rv">
-        <div class="proj-head">
-          <div class="proj-no">Project · 06</div>
-          <h3>Agency &amp; Production Management <span>| 12-film brand campaign</span></h3>
-          <p class="proj-narr">Extended the team beyond the team: sourced and ran an external production partner to deliver a full brand-film slate.</p>
-        </div>
-        <div class="dna">
-          <span class="own">OWNERSHIP 100%</span>
-          <div class="meter"><div class="lbl"><span class="s-l">Strategy</span><span class="s-r">Execution</span></div>
-            <div class="split"><div class="seg-s" style="width:25%"></div><div class="seg-x" style="width:75%"></div><span class="knot" style="left:25%"></span></div>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="pb-col"><h4><i></i>Outcomes</h4>
-            <div class="outcomes">
-              <div class="oc"><div class="n">12</div><div class="t">Brand films, concept to final cut</div></div>
-              <div class="oc"><div class="n">3 mo</div><div class="t">Project duration, end to end</div></div>
-            </div>
-          </div>
-          <div class="pb-col qual"><h4><i></i>The work</h4>
-            <ul class="worklist">
-              <li>Selected &amp; onboarded the agency; owned the engagement <b>end-to-end</b>.</li>
-              <li>Directed the slate: narrative films, UGC-style content &amp; offer-led creatives, <b>mapped to funnel stages</b>.</li>
-              <li>Managed scripting reviews, <b>casting &amp; budget decisions</b>, shoot-day coordination, and the post-production review loop.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <article class="proj finale rv">
-        <div class="proj-head">
-          <div class="proj-no">Project · 07 · The finale</div>
-          <h3>AI-Powered Marketing Operations <span>| 30+ agents, 40–70% GTM effort cut</span></h3>
-          <p class="proj-narr"><b>Entirely my own initiative. Nobody asked for this.</b> I rebuilt how marketing itself operates, replacing manual workflows with an AI-first operating system.</p>
-        </div>
-        <div class="dna">
-          <span class="own self">⚡ SELF-INITIATED</span>
-          <div class="meter"><div class="lbl"><span class="s-l">Strategy</span><span class="s-l">Execution</span></div>
-            <div class="split"><div class="seg-s" style="width:50%"></div><div class="seg-s" style="width:50%;opacity:.55"></div><span class="knot" style="left:50%"></span></div>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="pb-col"><h4><i></i>Outcomes</h4>
-            <div class="outcomes">
-              <div class="oc"><div class="n">30+</div><div class="t">AI assistants &amp; agents built</div></div>
-              <div class="oc"><div class="n">40–70%</div><div class="t">GTM effort reduced</div></div>
-              <div class="oc"><div class="n">300+</div><div class="t">Professional-grade AI images &amp; videos</div></div>
-              <div class="oc"><div class="n">80%+</div><div class="t">Manual inbound effort cut via AI chatbot</div></div>
-            </div>
-          </div>
-          <div class="pb-col qual"><h4><i></i>The work</h4>
-            <ul class="worklist">
-              <li>Built <b>6+ automation workflows</b> across blog generation, social creative production &amp; lead management.</li>
-              <li>Launched an <b>Instagram AI-agent chatbot</b> (FlowGent.ai) on a custom knowledge base, automating inbound enquiry handling.</li>
-              <li>Created a repeatable <b>AI creative pipeline</b> for campaign and brand content.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="stackrow"><span class="sl">Stack</span><span class="stk">N8N</span><span class="stk">OpenAI Playground</span><span class="stk">Claude Console</span><span class="stk">FlowGent</span><span class="stk">AI image &amp; video tools</span></div>
-      </article>
-
-    </div>
-  </div>
-</section>
-<style>
-/* DIFFERENT */
-.diff-rows{margin-top:50px;display:flex;flex-direction:column}
-.diff-row{display:grid;grid-template-columns:130px 1fr;gap:28px;padding:34px 0;border-bottom:1.5px solid var(--line);align-items:start}
-.diff-row:first-child{border-top:1.5px solid var(--line)}
-.diff-num{font-size:64px;font-weight:600;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--olive);letter-spacing:-.02em}
-.diff-row:nth-child(even) .diff-num{-webkit-text-stroke-color:var(--clay)}
-.diff-row h3{font-size:19px;margin-bottom:8px}
-.diff-row p{font-size:14.5px;color:#4a483f;max-width:720px}
-.diff-row p .caps{font-weight:600;letter-spacing:.06em}
-@media(max-width:600px){.diff-row{grid-template-columns:1fr;gap:8px}.diff-num{font-size:44px}}
-
-
 /* LIFE BEFORE WORK */
 .before-intro{font-size:clamp(16px,2.2vw,19px);line-height:1.85;max-width:760px;margin-top:22px;color:#33312a}
 .before-intro em{font-style:normal;font-weight:500;text-decoration:underline;text-decoration-color:var(--olive);text-decoration-thickness:2px;text-underline-offset:6px}
@@ -529,39 +271,15 @@ footer h2 em{font-style:normal;color:#B9C48C}
 @media(max-width:720px){.foot-grid{grid-template-columns:1fr}}
 </style>
 
-<section id="different">
+<section id="looking-for" class="chapter">
   <div class="wrap">
-    <div class="eyebrow rv">Uniqueness</div>
-    <h2 class="sec-title rv">The parts a resume can't hold.</h2>
-    <div class="diff-rows">
-      <div class="diff-row rv">
-        <div class="diff-num">01</div>
-        <div>
-          <h3>Compounding since childhood.</h3>
-          <p>Deep, self-built interests in geopolitics, business case studies, AI, and fitness. Over the years, my lifestyle has been structured around one thing: maximizing learning and growth.</p>
-        </div>
-      </div>
-      <div class="diff-row rv">
-        <div class="diff-num">02</div>
-        <div>
-          <h3>Energy that travels.</h3>
-          <p>I'm not a people pleaser, but I try to bring positive energy and an optimistic outlook to every room. It tends to rub off. I'd like to think people around me leave a little better than they arrived.</p>
-        </div>
-      </div>
-      <div class="diff-row rv">
-        <div class="diff-num">03</div>
-        <div>
-          <h3>Ambition without a ceiling.</h3>
-          <p>I believe I can do anything, and I want to be able to do everything. <span class="caps">EVERYTHING.</span> I see possibilities I don't fully understand yet, things I'm not ready for. That's the point.</p>
-        </div>
-      </div>
-      <div class="diff-row rv">
-        <div class="diff-num">04</div>
-        <div>
-          <h3>Still building... myself.</h3>
-          <p>A long way to go...</p>
-        </div>
-      </div>
+    <div class="eyebrow rv">What I am looking for</div>
+    <h2 class="sec-title rv">What I am looking for.</h2>
+    <div class="chapter-stats rv">
+      <span class="d-chip"><i></i>Fast growth / sharp career curve</span>
+      <span class="d-chip"><i></i>Difficult responsibilities</span>
+      <span class="d-chip"><i></i>Autonomy and ownership</span>
+      <span class="d-chip"><i></i>Good team</span>
     </div>
   </div>
 </section>
@@ -573,7 +291,7 @@ footer h2 em{font-style:normal;color:#B9C48C}
     <p class="before-intro rv">Before funnels and CPLs, every year of college I found something to lead, something to compete in, and something to fix. The pattern was set early: <em>take ownership, compete hard, and leave things better</em> than I found them.</p>
     <div class="persona-grid">
       <div class="persona rv">
-        <div class="ph"><svg viewBox="0 0 24 24"><path d="M12 4a3 3 0 110 6 3 3 0 010-6z"/><path d="M4 20c0-4 3.5-6 8-6s8 2 8 6"/></svg><h3>The Leader</h3></div>
+        <div class="ph"><svg viewBox="0 0 24 24"><path d="M12 4a3 3 0 110 6 3 3 0 010-6z"/><path d="M4 20c0-4 3.5-6 8-6s8 2 8 6"/></svg><h3>Leadership</h3></div>
         <div class="pb"><ul>
           <li><b>President, Physical Sciences Society.</b> Led and organized <b>10+ events</b>: the annual department fest, guest lectures, industrial visits, freshers' and farewells.</li>
           <li>Highest POC between college management and <b>350+ students</b>, solving individual problems along the way.</li>
@@ -582,7 +300,7 @@ footer h2 em{font-style:normal;color:#B9C48C}
         </ul></div>
       </div>
       <div class="persona rv">
-        <div class="ph"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0z"/><path d="M7 5H4v2a3 3 0 003 3M17 5h3v2a3 3 0 01-3 3"/></svg><h3>The Competitor</h3></div>
+        <div class="ph"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0z"/><path d="M7 5H4v2a3 3 0 003 3M17 5h3v2a3 3 0 01-3 3"/></svg><h3>Competition</h3></div>
         <div class="pb"><ul>
           <li>Wildcard finalist: <b>Top 30 among 1,200+ teams</b>, GEP Gameplan's national supply-chain case competition.</li>
           <li><b>Top 8 among 300+ teams</b> in Mantra Case Files, a national marketing case competition.</li>
@@ -591,7 +309,7 @@ footer h2 em{font-style:normal;color:#B9C48C}
         </ul></div>
       </div>
       <div class="persona rv">
-        <div class="ph"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.5"/></svg><h3>The Doer</h3></div>
+        <div class="ph"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.5"/></svg><h3>Other</h3></div>
         <div class="pb"><ul>
           <li><b>2 years</b> on the college waste-management team; learned the paper-recycling process hands-on.</li>
           <li><b>Recycled 100+ kg of paper</b> over those two years.</li>
@@ -625,7 +343,7 @@ footer h2 em{font-style:normal;color:#B9C48C}
         <ul>
           <li>Conducted market research &amp; competitor analysis to identify <b>8+ high-demand products</b> across customer demographics.</li>
           <li>Sourced and evaluated <b>50+ vendors</b> for raw materials and packaging.</li>
-          <li>Built the <b>go-to-market strategy and execution plan targeting the first 1,000+ customers</b> for an organic cosmetics line.</li>
+          <li>Assisted in building the <b>GTM and execution plan targeting the first 1,000+ customers</b> for an organic cosmetics line.</li>
         </ul>
       </div>
     </div>
@@ -689,8 +407,7 @@ footer h2 em{font-style:normal;color:#B9C48C}
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© Prerna Sharma. Built with obsession, not templates.</span>
-      <span>GTM · Growth · Brand · AI Ops</span>
+      <span>© Prerna Sharma.</span>
     </div>
   </div>
 </footer>
