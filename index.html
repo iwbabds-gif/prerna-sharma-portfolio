@@ -63,6 +63,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-f
 .hero .rv.in{filter:none}
 .hero .rv{transition:opacity .9s cubic-bezier(.22,.61,.36,1),transform .9s cubic-bezier(.22,.61,.36,1),filter .9s ease}
 .hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--olive) 0%,var(--clay) 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 .bet{display:inline-block;font-size:.52em;font-weight:500;color:var(--olive-deep);margin-top:10px;letter-spacing:-.01em}
 .hero-types{margin-top:38px;display:flex;flex-wrap:wrap;gap:12px}
 .hero-types .d-chip{padding:10px 22px;font-size:14px}
 .d-chip{background:var(--olive-soft);border:1px solid transparent;border-radius:999px;padding:7px 16px;font-size:12.5px;font-weight:500;color:var(--olive-deep);display:inline-flex;align-items:center;gap:9px;transition:all .25s;cursor:default}
@@ -86,6 +87,36 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-f
 .ticket-grid .rv:nth-child(2){transition-delay:.15s}
 .int-grid .rv:nth-child(2){transition-delay:.15s}
 .int-grid .rv:nth-child(3){transition-delay:.3s}
+
+
+/* SIDE VENTURE, inverted dark band */
+#venture{background:linear-gradient(160deg,#0C2624 0%,#0B1F1E 55%,#0E2A27 100%);padding:110px 0 120px;position:relative;overflow:hidden}
+#venture::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 400px at 90% 0%,rgba(94,234,212,.08),transparent 60%);pointer-events:none}
+#venture .wrap{position:relative}
+#venture .eyebrow{color:#5EEAD4}
+#venture .eyebrow::before{background:#5EEAD4}
+#venture .sec-title{color:#fff}
+#venture .chapter-meta{color:#9FB5B1}
+#venture .d-chip{background:rgba(94,234,212,.10);color:#A7E8DE;border:1px solid rgba(94,234,212,.25)}
+#venture .d-chip i{background:#5EEAD4}
+#venture .d-chip:nth-child(even){background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);color:#D7E5E2}
+#venture .d-chip:nth-child(even) i{background:#8FA8A4}
+#venture .d-chip:hover{background:#5EEAD4;color:#0B1F1E;box-shadow:0 6px 20px rgba(94,234,212,.3)}
+#venture .d-chip:hover i{background:#0B1F1E}
+#venture .chapter-col{box-shadow:none;backdrop-filter:blur(4px)}
+#venture .chapter-col.wrong{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12)}
+#venture .chapter-col.learned{background:rgba(94,234,212,.08);border:1px solid rgba(94,234,212,.22)}
+#venture .chapter-col:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.35)}
+#venture .chapter-col h4{color:#8FA8A4}
+#venture .chapter-col h4 i{background:#C2703D}
+#venture .chapter-col.learned h4 i{background:#5EEAD4}
+#venture .chapter-col li{color:#C9D8D5}
+#venture .chapter-col.wrong li::before{background:rgba(194,112,61,.5)}
+#venture .chapter-col.learned li::before{background:rgba(94,234,212,.45)}
+#venture .chapter-col b{color:#fff}
+#venture .chapter-shaped{background:#fff;box-shadow:0 16px 48px rgba(0,0,0,.35)}
+#venture .chapter-shaped .sh-label{color:var(--olive)}
+#venture .chapter-shaped p{color:#1E2E2B}
 
 /* CAREER CHAPTERS */
 .chapter{padding-top:96px}
@@ -125,7 +156,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-f
 <header class="hero" id="top">
   <div class="wrap">
     <div class="hero-tag rv"><i></i>4 years of professional journey</div>
-    <h1 class="rv">3 important parts.<br><em>GTM for 0→1.</em></h1>
+    <h1 class="rv">3 important parts.<br><em>GTM for 0→1.</em><br><span class="bet">+ 1 side venture that taught me the most.</span></h1>
     <div class="hero-types rv">
       <span class="d-chip"><i></i>B2B SaaS</span>
       <span class="d-chip"><i></i>Technology Services Sales</span>
@@ -245,6 +276,44 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-f
     <div class="chapter-shaped rv"><div class="sh-label">Impact</div><p>The steepest growth curve of my four years. I planned in quarters, owned the ad budget and the brand end to end, and the funnel I built fed an 8X ARR year. This is where I stopped just executing marketing and started running it.</p></div>
   </div>
 </section>
+
+<section class="transition">
+  <div class="wrap">
+    <p class="rv">Alongside the last stretch, I made a <em>serious bet of my own</em>.</p>
+  </div>
+</section>
+
+<section id="venture" class="chapter">
+  <div class="wrap">
+    <div class="eyebrow rv">The side venture</div>
+    <h2 class="sec-title rv">Agentic AI for video generation.</h2>
+    <p class="chapter-meta rv">7&#8211;8 months &nbsp;·&nbsp; 0 &#8594; Prototype &nbsp;·&nbsp; With a cofounder, alongside full-time jobs</p>
+    <div class="chapter-stats rv">
+      <span class="d-chip"><i></i>30&#8211;35 hours/week, consistently for 6&#8211;7 months</span>
+      <span class="d-chip"><i></i>Founder interviews: video production houses &amp; ad agencies</span>
+      <span class="d-chip"><i></i>4&#8211;5 working prototypes</span>
+      <span class="d-chip"><i></i>UI built and tested in the final 2 months</span>
+    </div>
+    <div class="chapter-grid">
+      <div class="chapter-col wrong rv"><h4><i></i>Why we stopped</h4>
+        <ul>
+          <li><b>The outcome was qualitative, in a complex way</b>, Even a technically correct agent pipeline could not guarantee output a client would accept. The complexity ran deeper than I anticipated.</li>
+          <li><b>We built before walking the process manually</b>, We started building around image and video models without first doing the manual R&amp;D ourselves. An early mistake, learnt late.</li>
+          <li><b>The ground kept shifting</b>, Image and video models were evolving too fast to build a stable product on top of them.</li>
+        </ul>
+      </div>
+      <div class="chapter-col learned rv"><h4><i></i>What I learned</h4>
+        <ul>
+          <li><b>Validate feasibility, not just demand</b>, Customer conversations proved the gap was real. Only hands-on R&amp;D could have proved the build. Do both before committing.</li>
+          <li><b>Building a product is a different craft from taking it to market</b>, Years of SaaS GTM did not translate into product development. I now know first-hand where my craft ends.</li>
+          <li><b>Pressure turns thinkers into executors</b>, The pressure I put on myself to keep things moving had me executing instead of thinking. I watch for that now.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chapter-shaped rv"><div class="sh-label">Impact</div><p>The most honest mirror of my four years. I know exactly where I stand as a builder now, less delusional, more grounded, and clearer about the problems I want to own next.</p></div>
+  </div>
+</section>
+
 <style>
 /* LIFE BEFORE WORK */
 .before-intro{font-size:15px;line-height:1.75;max-width:700px;margin-top:16px;color:var(--muted)}
