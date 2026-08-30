@@ -57,6 +57,34 @@ section{padding:96px 0}
 .rv.in{opacity:1;transform:none}
 a:focus-visible,button:focus-visible{outline:2px solid var(--olive);outline-offset:3px;border-radius:2px}
 
+/* LANDING */
+.lead{padding:130px 0 90px;position:relative;overflow:hidden}
+.lead::before{content:"";position:absolute;inset:0;background:radial-gradient(820px 460px at 88% -12%,rgba(13,148,136,.10),transparent 64%);pointer-events:none}
+.lead .wrap{position:relative}
+.lead-grid{display:block}
+.lead h1{font-size:clamp(38px,6.4vw,64px);line-height:1.08;letter-spacing:-.02em;margin-bottom:22px}
+.lead-chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.lead-chips .d-chip{padding:9px 20px;font-size:13.5px}
+.lead-meta{color:var(--muted);font-size:15.5px;max-width:520px}
+.lead-meta b{color:var(--ink);font-weight:600}
+.lead-cta{margin-top:40px;display:inline-flex;align-items:center;gap:11px;font-size:14px;font-weight:600;letter-spacing:.03em;color:var(--olive-deep);border:1.5px solid var(--olive);border-radius:999px;padding:12px 24px;transition:all .25s}
+.lead-cta svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s}
+.lead-cta:hover{background:var(--olive);color:#fff}
+.lead-cta:hover svg{transform:translateY(3px)}
+@media(max-width:820px){.lead{padding:104px 0 72px}}
+
+
+/* HOW I WORK */
+.hiw-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px 44px;margin-top:42px}
+.hiw-item h3{font-size:19px;line-height:1.35;margin-bottom:9px;padding-left:16px;position:relative}
+.hiw-item h3::before{content:"";position:absolute;left:0;top:.52em;width:7px;height:7px;border-radius:50%;background:var(--olive)}
+.hiw-item:nth-child(even) h3::before{background:var(--clay)}
+.hiw-item p{color:var(--muted);font-size:15.5px;padding-left:16px}
+@media(max-width:780px){.hiw-grid{grid-template-columns:1fr;gap:26px}}
+#how-i-work{padding-bottom:190px}
+#how-i-work .wrap::after{content:"";display:block;width:52px;height:2px;margin:150px auto 0;background:linear-gradient(90deg,var(--olive),var(--clay));opacity:.5;border-radius:2px}
+@media(max-width:780px){#how-i-work{padding-bottom:110px}#how-i-work .wrap::after{margin-top:90px}}
+
 /* NAV */
 nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);box-shadow:0 1px 12px rgba(14,27,26,.04)}
 .nav-in{max-width:1080px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
@@ -179,23 +207,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </nav>
 
-<header class="hero" id="top">
+<section class="lead" id="top">
   <div class="wrap">
-    <div class="hero-tag rv"><i></i>4 years of professional journey</div>
-    <h1 class="rv">3 important parts.<br><em>GTM for 0→1.</em><br><span class="bet">+ 1 side project that taught me the most.</span></h1>
-    <div class="hero-types rv">
-      <span class="d-chip"><i></i>B2B SaaS</span>
-      <span class="d-chip"><i></i>Technology Services Sales</span>
-      <span class="d-chip"><i></i>Consumer IoT Brand</span>
+    <div class="lead-grid">
+      <div>
+        <h1 class="rv">Prerna Sharma<span style="color:var(--olive)">.</span></h1>
+        <div class="lead-chips rv">
+          <span class="d-chip"><i></i>0&#8594;1 GTM Professional</span>
+          <span class="d-chip"><i></i>IIM Raipur</span>
+          <span class="d-chip"><i></i>4+ Years</span>
+        </div>
+        <p class="lead-meta rv"><b>Area of expertise:</b> Brand Leadership &middot; GTM Strategy &middot; Revenue Growth</p>
+        <a class="lead-cta rv" href="#contact">Contact me
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </a>
+      </div>
     </div>
   </div>
-</header>
+</section>
+
+<section id="how-i-work" class="chapter">
+  <div class="wrap">
+    <div class="eyebrow rv">About me</div>
+    <h2 class="sec-title rv">My core.</h2>
+    <div class="hiw-grid">
+      <div class="hiw-item rv">
+        <h3>I work a lot.</h3>
+        <p>Work takes up most of my time and I like it that way. Long hours are my normal setting rather than something I switch into.</p>
+      </div>
+      <div class="hiw-item rv">
+        <h3>I go after difficult things.</h3>
+        <p>I am drawn to problems I do not yet know how to solve. Figuring something out from nothing is the part I enjoy most. Comfortable work makes me restless.</p>
+      </div>
+      <div class="hiw-item rv">
+        <h3>I care about quality.</h3>
+        <p>My work is my identity. I cannot put out something mediocre and be alright with it.</p>
+      </div>
+      <div class="hiw-item rv">
+        <h3>My energy carries over to people.</h3>
+        <p>I push myself constantly, and it rubs off on whoever is around me. I do it because I would rather be useful to someone than comfortable with them.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="intro" class="chapter">
   <div class="wrap">
     <div class="eyebrow rv">Career parts</div>
     <h2 class="sec-title rv">One organisation, 3 parts.</h2>
-    <p class="chapter-result rv">During my 4 years 3 months at <a href="https://www.smartsensesolutions.com/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:inherit">smartSense</a>, I worked across multiple areas of GTM for our services business and two in-house products, one at a time.</p>
+    <div class="hero-types rv">
+      <span class="d-chip"><i></i>B2B SaaS</span>
+      <span class="d-chip"><i></i>Technology Services Sales</span>
+      <span class="d-chip"><i></i>Consumer IoT Brand</span>
+    </div>
+    <p class="chapter-result rv" style="margin-top:34px">During my 4 years 4 months at <a href="https://www.smartsensesolutions.com/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:inherit">smartSense</a>, I worked across multiple areas of GTM for our services business and two in-house products, one at a time.</p>
     <p class="chapter-meta rv" style="margin-top:14px">The parts below run oldest to latest, to keep the story consistent.</p>
   </div>
 </section>
@@ -205,7 +270,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="eyebrow rv">Part · 01 · B2B SaaS</div>
     <h2 class="sec-title rv">HRTech product for fresh graduate hiring from colleges.</h2>
     <p class="chapter-meta rv"><a href="https://fosterclub.io/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:var(--ink);font-weight:600">Foster</a> &nbsp;·&nbsp; 2 years &nbsp;·&nbsp; 0–1 Scale &nbsp;·&nbsp; B2B SaaS</p>
-    <div class="focus-row rv"><span class="focus-label">Focus areas</span><div class="focus-tags"><span class="focus-tag">Product Marketing</span><span class="focus-tag">Community-led Growth</span><span class="focus-tag">Field Marketing</span><span class="focus-tag">Brand Management</span></div></div>
+    <div class="focus-row rv"><span class="focus-label">Focus areas</span><div class="focus-tags"><span class="focus-tag">Brand Operations</span><span class="focus-tag">Sales Enablement</span><span class="focus-tag">Product Operations</span><span class="focus-tag">Partnerships</span></div></div>
     <div class="chapter-stats rv">
       <span class="d-chip"><i></i>10,000+ colleges onboarded</span>
       <span class="d-chip"><i></i>6,000+ cold calls</span>
@@ -214,7 +279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="d-chip"><i></i>50+ product demo calls</span>
       <span class="d-chip"><i></i>80+ workshops/competitions</span>
     </div>
-    <p class="chapter-result rv"><b>Results:</b> 0 → $100K (₹80L+) revenue.<br><b>Ownership:</b> Day-to-day operations, end-to-end customer project delivery.</p>
+    <p class="chapter-result rv"><b>Results:</b> 0 → $100K (₹80L+) revenue.</p>
     <div class="chapter-grid">
       <div class="chapter-col wrong rv"><h4><i></i>Where it broke</h4>
         <ul>
@@ -246,12 +311,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="eyebrow rv">Part · 02 · Technology Services Sales</div>
     <h2 class="sec-title rv">B2B technology services GTM.</h2>
     <p class="chapter-meta rv"><a href="https://www.smartsensesolutions.com/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:var(--ink);font-weight:600">smartSense</a> &nbsp;·&nbsp; 1 year &nbsp;·&nbsp; 1–10 Scale &nbsp;·&nbsp; Enterprise Sales</p>
-    <div class="focus-row rv"><span class="focus-label">Focus areas</span><div class="focus-tags"><span class="focus-tag">ABM</span><span class="focus-tag">Sales Enablement</span><span class="focus-tag">LinkedIn Paid</span><span class="focus-tag">Pre-sales</span></div></div>
+    <div class="focus-row rv"><span class="focus-label">Focus areas</span><div class="focus-tags"><span class="focus-tag">Demand Generation</span><span class="focus-tag">Sales Enablement</span><span class="focus-tag">Pre-sales</span></div></div>
     <div class="chapter-stats rv">
       <span class="d-chip"><i></i>$1M+ revenue across 4 deals</span>
       <span class="d-chip"><i></i>100+ sales enablement assets</span>
     </div>
-    <p class="chapter-result rv"><b>Ownership:</b> Pre-sales operations, LinkedIn paid funnel, sales enablement.</p>
     <div class="chapter-grid">
       <div class="chapter-col wrong rv"><h4><i></i>Where it broke</h4>
         <ul>
@@ -278,8 +342,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="eyebrow rv">Part · 03 · Consumer IoT Brand</div>
     <h2 class="sec-title rv">Connected home ecosystem with centralised control.</h2>
-    <p class="chapter-meta rv"><a href="https://thedoo.io/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:var(--ink);font-weight:600">DOO</a> &nbsp;·&nbsp; 1 year &nbsp;·&nbsp; B2C &nbsp;·&nbsp; 0–1 Scale</p>
-    <div class="focus-row rv"><span class="focus-label">Focus areas</span><div class="focus-tags"><span class="focus-tag">Performance Marketing</span><span class="focus-tag">Brand Strategy</span><span class="focus-tag">Content Strategy</span><span class="focus-tag">Partnerships</span></div></div>
+    <p class="chapter-meta rv"><a href="https://thedoo.io/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:var(--ink);font-weight:600">DOO</a> &nbsp;·&nbsp; 1 year 4 months &nbsp;·&nbsp; B2C &nbsp;·&nbsp; 0–1 Scale</p>
+    <div class="focus-row rv"><span class="focus-label">Focus areas</span><div class="focus-tags"><span class="focus-tag">Brand Strategy</span><span class="focus-tag">Demand Generation</span><span class="focus-tag">Sales Enablement</span></div></div>
     <div class="chapter-stats rv">
       <span class="d-chip"><i></i>5M+ reach</span>
       <span class="d-chip"><i></i>20,000+ high-intent leads</span>
@@ -287,7 +351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="d-chip"><i></i>20X brand engagement</span>
       <span class="d-chip"><i></i>40X website visits</span>
     </div>
-    <p class="chapter-result rv"><b>Results:</b> ₹25L → ₹2Cr (~$30K → $240K) ARR.<br><b>Ownership:</b> Monthly/quarterly Ads strategy &amp; budget management, end-to-end brand management.</p>
+    <p class="chapter-result rv"><b>Results:</b> ₹25L → ₹2Cr (~$30K → $240K) ARR.</p>
     <div class="chapter-grid">
       <div class="chapter-col wrong rv"><h4><i></i>Where it broke</h4>
         <ul>
