@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Prerna Sharma">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0F766E">
+
+<!-- Open Graph: WhatsApp, LinkedIn, Facebook, Slack -->
+<meta property="og:site_name" content="Prerna Sharma">
+<meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://prerna-sharma-portfolio.vercel.app/og-reo.png">
+<meta property="og:image:secure_url" content="https://prerna-sharma-portfolio.vercel.app/og-reo.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Prerna Sharma. Analysis of Reo.Dev’s category-led content pull engine: the Technical GTM Mesh and developer intent.">
+
+<!-- X / Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://prerna-sharma-portfolio.vercel.app/og-reo.png">
+<meta name="twitter:image:alt" content="Prerna Sharma. Analysis of Reo.Dev’s category-led content pull engine: the Technical GTM Mesh and developer intent.">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KL24WRMT');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VHBVT9L6W8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VHBVT9L6W8');
+</script>
+
+<!-- Apollo Website Visitor Tracking -->
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,o.onload=function(){window.trackingFunctions.onLoad({appId:"6a36f9e6c1b01800201efefa"})},document.head.appendChild(o)}initApollo();</script>
+<!-- End Apollo Website Visitor Tracking -->
+
+<!-- Leadfeeder Tracking -->
+<script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('kn9Eq4R0Lbj8RlvP'); </script>
+<!-- End Leadfeeder Tracking -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<title>Reo.Dev&#8217;s category-led content pull engine &middot; Prerna Sharma</title>
+<meta name="description" content="A teardown of how Reo.Dev builds demand for developer intent data — the Technical GTM Mesh, and what it takes to sell to technical buyers.">
+<link rel="canonical" href="https://prerna-sharma-portfolio.vercel.app/reo-case-study.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://prerna-sharma-portfolio.vercel.app/reo-case-study.html">
+<meta property="og:title" content="Reo.Dev&#8217;s category-led content pull engine &middot; Prerna Sharma">
+<meta property="og:description" content="A teardown of how Reo.Dev builds demand for developer intent data — the Technical GTM Mesh, and what it takes to sell to technical buyers.">
+<meta name="twitter:title" content="Reo.Dev&#8217;s category-led content pull engine &middot; Prerna Sharma">
+<meta name="twitter:description" content="A teardown of how Reo.Dev builds demand for developer intent data — the Technical GTM Mesh, and what it takes to sell to technical buyers.">
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL24WRMT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="index.html">PRERNA<span>.</span>SHARMA</a>
+    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html" class="active">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="nav-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
+  </div>
+</nav>
+
+<section class="lead">
+  <div class="wrap">
+    <p class="kicker rv">Case study</p>
+    <h1 class="rv">Reo.Dev&#8217;s category-led content pull engine<span>.</span></h1>
+
+    <div class="src rv">
+      <a href="https://www.reo.dev/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg>
+        reo.dev
+      </a>
+      <a href="https://www.linkedin.com/company/reo-dev" target="_blank" rel="noopener">
+        <svg class="f" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.75-1.95 4 0 4.75 2.5 4.75 5.75V21h-4v-5.6c0-1.34-.03-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21H9z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+
+    <dl class="lead-meta rv">
+      <div><dt>Company</dt><dd>Reo.Dev</dd></div>
+      <div><dt>Positioning</dt><dd>The Technical GTM Mesh</dd></div>
+      <div><dt>Audience</dt><dd>GTM teams selling to technical buyers</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 01 -->
+<section id="s1">
+  <div class="wrap">
+    <p class="sec-num rv">01</p>
+    <h2 class="sec-title rv">What Reo.Dev sells.</h2>
+
+    <div class="blk rv" style="margin-top:34px">
+      <p class="thesis">For technical products, buying intent shows up in <b>developer behaviour</b>, GitHub activity, package installs, docs usage, CLI runs, long before it shows up in a CRM. <b>Whoever captures that signal first owns the pipeline.</b></p>
+      <span class="postn"><i></i>Positioned today as <b>The Technical GTM Mesh</b></span>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h">The problem Reo.Dev solves</h3>
+      <p>An engineer finds a tool and installs it. The team adopts it quietly. The org evaluates. <b>Only at procurement does the CRM see anything.</b></p>
+      <div class="flow">
+        <div class="flow-i"><p class="st">Stage 1</p><p class="tx"><b>Engineer discovers</b>, installs, pulls, clones</p></div>
+        <div class="flow-i"><p class="st">Stage 2</p><p class="tx"><b>Team adopts quietly</b> through docs, CLI and trials</p></div>
+        <div class="flow-i"><p class="st">Stage 3</p><p class="tx"><b>Org evaluates</b>, still invisible to sales</p></div>
+        <div class="flow-i"><p class="st">Stage 4</p><p class="tx"><b>Procurement surfaces</b>, the CRM finally sees it</p></div>
+      </div>
+      <div class="pull">Traditional intent tools only see that last stage. <b>The real evaluation happens above it, invisible.</b> So sales chases cold accounts while warm ones evaluate in silence.</div>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h alt">The moat asset</h3>
+      <div class="moat">
+        <h4>The Developer Knowledge Graph</h4>
+        <p>Built on <b>what engineers do</b>, not what titles claim. <b>Proprietary, behavioural, compounding.</b></p>
+        <div class="moat-n">
+          <div><b>100M+</b><span>engineer profiles</span></div>
+          <div><b>3,000+</b><span>technologies mapped</span></div>
+          <div><b>250+</b><span>technical functions</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h">Product layers</h3>
+      <dl class="layers">
+        <div class="layer"><dt>Signals</dt><dd>First and third-party technical activity, <b>unified into one stream</b></dd></div>
+        <div class="layer"><dt>Accounts</dt><dd><b>In-market companies</b> surfaced by adoption, migration and hiring signals</dd></div>
+        <div class="layer"><dt>People</dt><dd>The Knowledge Graph: <b>the buyer and champion</b> behind every opportunity</dd></div>
+        <div class="layer"><dt>Audiences</dt><dd>Segments by <b>tech stack, hiring velocity and engineering maturity</b></dd></div>
+        <div class="layer"><dt>Actions</dt><dd>Push into <b>CRM, Slack, outreach tools, Chrome</b> and exports</dd></div>
+        <div class="layer"><dt>Agents</dt><dd>CompIQ, Account360, AI-SDR, plus <b>Reon, a custom agent builder</b></dd></div>
+      </dl>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h alt">How the product moved in three years</h3>
+      <div class="tl">
+        <div class="tl-i">
+          <p class="tl-yr">2023&#8211;24</p>
+          <h4>A data feed</h4>
+          <p><b>Developer-intent detection.</b> Signal collection from open source, docs and packages.</p>
+        </div>
+        <div class="tl-i">
+          <p class="tl-yr">2025</p>
+          <h4>A GTM OS</h4>
+          <p><b>Audiences, scoring and prioritisation.</b> Activation into CRM and outreach.</p>
+        </div>
+        <div class="tl-i">
+          <p class="tl-yr">2026</p>
+          <h4>An AI-native mesh</h4>
+          <p>Reo Agents and Reo MCP, <b>2Bn tokens in month one</b>. The Agent Intent Gateway captures <b>what AI agents ask when they evaluate a product</b>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section id="s2" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">02</p>
+    <h2 class="sec-title rv">What the content actually does.</h2>
+    <p class="sec-sub rv">This is a <b>category-led content engine, not a blog</b>. The positioning is deliberately narrow, GTM for technical buyers and nothing wider, and every property carries the same prefix. <b>Content is treated as the layer that builds the category</b>, not as lead-gen support for sales.</p>
+
+    <div class="blk rv">
+      <h3 class="blk-h">Four things the engine does</h3>
+      <div class="nums">
+        <div class="num-i">
+          <span class="n">01</span>
+          <div>
+            <h4>Creates demand instead of capturing it</h4>
+            <p>Ranks for <b>adjacent problems buyers already search for</b>, then leads them to the bigger reframe. <span class="ex">See <em>How to monetize your OSS</em>, the DevRel Guide, and <em>Why 90% of Developer Content Fails</em>.</span></p>
+          </div>
+        </div>
+        <div class="num-i">
+          <span class="n">02</span>
+          <div>
+            <h4>Makes the product feel necessary</h4>
+            <p>Content teaches <b>plays that require the product&#8217;s infrastructure</b>. The need gets created without the product being sold. <span class="ex">See the playbook <em>Identify Developers Opening Issues &amp; Comments on your Competitor GitHub Repositories</em>.</span></p>
+          </div>
+        </div>
+        <div class="num-i">
+          <span class="n">03</span>
+          <div>
+            <h4>Borrows credibility</h4>
+            <p>Co-creating with recognised DevTool operators <b>transfers that authority</b>. <span class="ex">See the DevGTM Ecosystem hub and the Unstructured.io session on converting OSS signals into pipeline.</span></p>
+          </div>
+        </div>
+        <div class="num-i">
+          <span class="n">04</span>
+          <div>
+            <h4>Owns the vocabulary</h4>
+            <p>If <em>DevGTM</em> becomes the category language, <b>competitors have to play on Reo&#8217;s terms</b>. <span class="ex">DevGTM Blog, Playbooks, Academy, Signals Guide, Modern DevGTM Newsletter.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h alt">What the engine produces</h3>
+      <p>Six pillars visible from outside.</p>
+      <div class="pil">
+        <div class="pil-i">
+          <h4>Category education</h4>
+          <p>Why <b>generic intent data fails</b> for developer-first companies.</p>
+        </div>
+        <div class="pil-i">
+          <h4>Operator content</h4>
+          <p>Playbooks, a <b>120+ signal framework</b>, and the DevGTM Academy.</p>
+        </div>
+        <div class="pil-i">
+          <h4>Product-led proof</h4>
+          <p>Launch posts for <b>Audiences, Tech &amp; Hiring Signals, MCP and Agents</b>.</p>
+        </div>
+        <div class="pil-i">
+          <h4>Customer proof, quantified</h4>
+          <p>DataHub, <b>$1.01M pipeline per quarter</b>. Unstructured, <b>40% of pipeline</b>.</p>
+        </div>
+        <div class="pil-i">
+          <h4>Founder-led distribution</h4>
+          <p><b>Three distinct voices</b>: category and vision, technical credibility, commercial execution and hiring.</p>
+        </div>
+        <div class="pil-i">
+          <h4>Community and ecosystem</h4>
+          <p>DevGTM Ecosystem partners, webinars, a podcast, and the <b>Reo &#215; Claude Builder Challenge</b>.</p>
+        </div>
+      </div>
+
+      <div class="proof">
+        <h3>Reo.Dev runs its own product, publicly.</h3>
+        <p>The numbers Reo.Dev publishes about <b>its own go-to-market</b>.</p>
+        <div class="proof-g">
+          <div><b>26% vs 6%</b><span>meeting rate on <b>intent-signalled accounts</b> versus accounts without signals</span></div>
+          <div><b>$0.6M</b><span>pipeline per SDR per month, <b>5x the 2024 number</b></span></div>
+          <div><b>40%</b><span>of leads now inbound, up from <b>around 5% two years ago</b></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h">How the engine is run</h3>
+      <ul class="bl">
+        <li><b>Category ownership.</b> Proprietary language around developer GTM, technical buying signals, developer intent and the dev-to-buyer gap. Then <b>the Academy and blog teach it</b>.</li>
+        <li><b>Operator-grade playbooks, not listicles.</b> Cold email, LinkedIn outreach, ICP scoring, DevGTM Mesh, open-source monetisation, developer marketing.</li>
+        <li><b>Product shown through workflows, not features.</b> Signals, research, scoring, CRM and outreach demonstrated as <b>one connected system</b>.</li>
+        <li><b>Multiple entry points by role.</b> Founders, marketers, SDRs, RevOps and DevRel <b>each have a door in</b>.</li>
+      </ul>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h alt">The reframe</h3>
+      <p>Generic B2B intent becomes <b>developer-specific intelligence</b>.</p>
+      <div class="chain">
+        <p class="lbl">The chain</p>
+        <div class="steps">
+          <span class="st">Anonymous developer behaviour</span>
+          <span class="ar">&#8594;</span>
+          <span class="st">Identified account</span>
+          <span class="ar">&#8594;</span>
+          <span class="st">Buying context</span>
+          <span class="ar">&#8594;</span>
+          <span class="st hi">Sales action</span>
+        </div>
+      </div>
+      <div class="pull c">The message: you may already see developer activity. <b>Reo tells you who is behind it, what they care about, and when to engage.</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section id="s3" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">03</p>
+    <h2 class="sec-title rv">How the content gets distributed.</h2>
+    <p class="sec-sub rv">The LinkedIn page is <b>not the channel</b>. It is an aggregator.</p>
+
+    <div class="blk rv" style="margin-top:34px">
+      <p class="statline"><b>Only 1 of the last 11 posts on the company page was original</b>, an employee spotlight. Everything else was a repost. The restructure started <b>five to six months ago</b>.</p>
+      <p style="margin-top:22px">This is deliberate. <b>LinkedIn suppresses company pages and rewards personal profiles</b>, so the entire broadcast function has moved onto people and the page just collects it.</p>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h">What the page amplifies</h3>
+      <div class="amp">
+        <div class="amp-i">
+          <h4>The team</h4>
+          <p><b>CEO</b> on category narratives and provocative POVs. <b>Co-founders</b> on product depth, podcasts and demos. <b>Marketing</b> on launch teasers and campaigns.</p>
+          <p>A fictional <b>&#8220;Co-CEO&#8221;</b> with its own account runs humour and product disguised as memes.</p>
+        </div>
+        <div class="amp-i">
+          <h4>Industry operators</h4>
+          <p>DevTools GTM experts who <b>reinforce Reo&#8217;s positioning</b>.</p>
+          <p><b>Repeated narratives suggest these talking points are seeded, not purely organic.</b></p>
+        </div>
+        <div class="amp-i">
+          <h4>Customers and community</h4>
+          <p><b>DevGTM Academy graduates</b> and customers supplying social proof and community-generated content.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h alt">Three tactics doing the work</h3>
+      <div class="tac">
+        <div class="tac-i">
+          <h4>Comment gating</h4>
+          <p><em>Comment &#8220;Agent&#8221;</em> produced <b>47 comments against 53 reactions</b>, deliberately optimising for <b>reach and lead capture</b> over vanity engagement.</p>
+        </div>
+        <div class="tac-i">
+          <h4>Leadership engagement</h4>
+          <p>Executives are consistently <b>among the first reactors</b>, which builds early post velocity.</p>
+        </div>
+        <div class="tac-i">
+          <h4>Naming discipline</h4>
+          <p><b>#ReoLaunchMonth</b>, <b>#AgentGTM</b> and <b>DevGTM</b> used consistently to compound the category.</p>
+        </div>
+      </div>
+      <div class="pull">This is not a company-page content machine. <b>It is a people-powered distribution network</b>, with employees, operators, customers and community members doing the broadcasting.</div>
+    </div>
+  </div>
+</section>
+
+<section id="looking">
+  <div class="lf-band">
+    <div class="wrap">
+      <div class="lf-text">
+        <div class="eyebrow rv">What next</div>
+        <h2 class="rv">I am open to anything that brings a <b>sharp learning curve</b>, in and around <b>GTM, Growth and Sales</b>.</h2>
+      </div>
+      <div class="rv lf-cta"><a class="btn-call" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="btn-wa ico" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="eyebrow rv">Contact</div>
+        <h2 class="rv">Let's talk.</h2>
+        <div class="foot-info rv">
+          <p>Prerna Sharma</p>
+          <p class="fi-label">Last employer</p>
+          <p>Senior Manager, Sales &amp; Marketing</p>
+          <p>smartSense Consulting Solutions Pvt. Ltd.</p>
+        </div>
+      </div>
+      <div class="foot-links rv">
+        <a href="mailto:iwbabds@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>iwbabds@gmail.com</a>
+        <a href="https://www.linkedin.com/in/prerna-sharma-2a5a88181/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 00-4 0"/></svg>LinkedIn · Prerna Sharma</a>
+        <a href="tel:+917838971472"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>+91 7838-971-472</a>
+      </div>
+    </div>
+    <div class="foot-facts rv">
+      <div class="ff"><span class="ff-label">Hometown</span><span class="ff-value">Delhi</span></div>
+      <div class="ff"><span class="ff-label">Current location</span><span class="ff-value">GIFT City, Gujarat</span></div>
+      <div class="ff"><span class="ff-label">Availability</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
+      <div class="ff"><span class="ff-label">Relocation</span><span class="ff-value">Open to relocation</span></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© Prerna Sharma.</span>
+    </div>
+  </div>
+</footer>
+<script src="/app.js"></script>
+</body>
+</html>

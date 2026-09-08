@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://prerna-sharma-portfolio.vercel.app/</loc><priority>1.0</priority></url>
+  <url><loc>https://prerna-sharma-portfolio.vercel.app/work.html</loc><priority>0.9</priority></url>
+  <url><loc>https://prerna-sharma-portfolio.vercel.app/case-studies.html</loc><priority>0.9</priority></url>
+  <url><loc>https://prerna-sharma-portfolio.vercel.app/doo-case-study.html</loc><priority>0.8</priority></url>
+  <url><loc>https://prerna-sharma-portfolio.vercel.app/job-search-system.html</loc><priority>0.8</priority></url>
+  <url><loc>https://prerna-sharma-portfolio.vercel.app/reo-case-study.html</loc><priority>0.7</priority></url>
+  <url><loc>https://prerna-sharma-portfolio.vercel.app/clay-case-study.html</loc><priority>0.7</priority></url>
+  <url><loc>https://prerna-sharma-portfolio.vercel.app/about.html</loc><priority>0.7</priority></url>
+</urlset>

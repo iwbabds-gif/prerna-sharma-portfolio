@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Prerna Sharma">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0F766E">
+
+<!-- Open Graph: WhatsApp, LinkedIn, Facebook, Slack -->
+<meta property="og:site_name" content="Prerna Sharma">
+<meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://prerna-sharma-portfolio.vercel.app/og-clay.png">
+<meta property="og:image:secure_url" content="https://prerna-sharma-portfolio.vercel.app/og-clay.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Prerna Sharma. Analysis of Clay’s ecosystem-led GTM engine: GTM infrastructure and ecosystem-led growth.">
+
+<!-- X / Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://prerna-sharma-portfolio.vercel.app/og-clay.png">
+<meta name="twitter:image:alt" content="Prerna Sharma. Analysis of Clay’s ecosystem-led GTM engine: GTM infrastructure and ecosystem-led growth.">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KL24WRMT');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VHBVT9L6W8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VHBVT9L6W8');
+</script>
+
+<!-- Apollo Website Visitor Tracking -->
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,o.onload=function(){window.trackingFunctions.onLoad({appId:"6a36f9e6c1b01800201efefa"})},document.head.appendChild(o)}initApollo();</script>
+<!-- End Apollo Website Visitor Tracking -->
+
+<!-- Leadfeeder Tracking -->
+<script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('kn9Eq4R0Lbj8RlvP'); </script>
+<!-- End Leadfeeder Tracking -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<title>Clay&#8217;s ecosystem-led GTM engine &middot; Prerna Sharma</title>
+<meta name="description" content="A teardown of Clay as GTM infrastructure rather than a tool — how the ecosystem, the community and the product loop feed each other.">
+<link rel="canonical" href="https://prerna-sharma-portfolio.vercel.app/clay-case-study.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://prerna-sharma-portfolio.vercel.app/clay-case-study.html">
+<meta property="og:title" content="Clay&#8217;s ecosystem-led GTM engine &middot; Prerna Sharma">
+<meta property="og:description" content="A teardown of Clay as GTM infrastructure rather than a tool — how the ecosystem, the community and the product loop feed each other.">
+<meta name="twitter:title" content="Clay&#8217;s ecosystem-led GTM engine &middot; Prerna Sharma">
+<meta name="twitter:description" content="A teardown of Clay as GTM infrastructure rather than a tool — how the ecosystem, the community and the product loop feed each other.">
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL24WRMT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="index.html">PRERNA<span>.</span>SHARMA</a>
+    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html" class="active">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="nav-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
+  </div>
+</nav>
+
+<section class="lead">
+  <div class="wrap">
+    <p class="kicker rv">Case study</p>
+    <h1 class="rv">Clay&#8217;s ecosystem-led GTM engine<span>.</span></h1>
+
+    <dl class="lead-meta rv">
+      <div><dt>Company</dt><dd>Clay</dd></div>
+      <div><dt>Positioning</dt><dd>GTM infrastructure</dd></div>
+      <div><dt>Audience</dt><dd>GTM Engineers and technical revenue teams</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 01 -->
+<section id="s1">
+  <div class="wrap">
+    <p class="sec-num rv">01</p>
+    <h2 class="sec-title rv">What Clay sells.</h2>
+
+    <div class="blk rv" style="margin-top:30px">
+      <p class="thesis">The GTM stack is fragmented. Data sits in one tool, research in another, AI somewhere else, and execution spreads across CRM, sales tools and ad platforms. <b>The team connecting all of it becomes the bottleneck.</b></p>
+      <span class="postn"><i></i>Positioned as <b>GTM infrastructure</b></span>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h">Product layers</h3>
+      <dl class="layers">
+        <div class="layer"><dt>Data</dt><dd>Combine <b>identity, intent, engagement and enrichment</b> data</dd></div>
+        <div class="layer"><dt>Agents</dt><dd>AI for <b>research, analysis and qualification</b></dd></div>
+        <div class="layer"><dt>Orchestration</dt><dd>Workflow logic, <b>triggers and data movement</b></dd></div>
+        <div class="layer"><dt>Execution</dt><dd>Activate actions across <b>sales, marketing and CRM</b></dd></div>
+        <div class="layer"><dt>Governance</dt><dd>Controls and reliability <b>as workflows scale</b></dd></div>
+      </dl>
+    </div>
+
+    <div class="pull rv">Clay is not another GTM tool. <b>It is the layer between the tools.</b></div>
+
+    <div class="blk rv">
+      <h3 class="blk-h alt">The category</h3>
+      <p>Rather than positioning around enrichment, Clay popularised <b>the GTM Engineer</b>: a hybrid operator sitting between sales, marketing, RevOps and data automation.</p>
+      <p>Instead of competing for a data enrichment or sales engagement budget, the category makes Clay <b>the operating environment</b>.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- 02 -->
+<section id="s2" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">02</p>
+    <h2 class="sec-title rv">What the GTM actually does.</h2>
+    <p class="sec-sub rv">This is not a traditional acquisition engine. It is <b>an ecosystem around the people who operate GTM systems</b>.</p>
+
+    <div class="blk rv">
+      <h3 class="blk-h">Four moves, one loop</h3>
+      <div class="nums">
+        <div class="num-i">
+          <span class="n">01</span>
+          <div>
+            <h4>Product creates the proof</h4>
+            <p>A successful workflow becomes <b>product proof, internal sharing and an expansion trigger</b>.</p>
+          </div>
+        </div>
+        <div class="num-i">
+          <span class="n">02</span>
+          <div>
+            <h4>Education reduces complexity</h4>
+            <p>University, workshops, templates and guides <b>make a complex product usable</b>.</p>
+          </div>
+        </div>
+        <div class="num-i">
+          <span class="n">03</span>
+          <div>
+            <h4>Community creates distribution</h4>
+            <p>Users become <b>learners, certified operators, champions and eventually partners</b>.</p>
+          </div>
+        </div>
+        <div class="num-i">
+          <span class="n">04</span>
+          <div>
+            <h4>Sales monetises expansion</h4>
+            <p>As workflows spread, <b>governance and scale requirements</b> create the enterprise motion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chain rv">
+      <p class="lbl">The entry point</p>
+      <div class="steps">
+        <span class="st">Enrich a list</span>
+        <span class="ar">&#8594;</span>
+        <span class="st">Research accounts</span>
+        <span class="ar">&#8594;</span>
+        <span class="st">Build an ICP</span>
+        <span class="ar">&#8594;</span>
+        <span class="st">Identify signals</span>
+        <span class="ar">&#8594;</span>
+        <span class="st hi">Route leads</span>
+      </div>
+    </div>
+
+    <div class="pull c rv">One workflow proves the product. <b>Multiple workflows embed it.</b></div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section id="s3" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">03</p>
+    <h2 class="sec-title rv">How demand gets created.</h2>
+    <p class="sec-sub rv">Clay does not primarily sell the platform. <b>It sells the outcome someone wants to build.</b></p>
+
+    <div class="blk rv">
+      <ul class="bl">
+        <li><b>Captures operational demand.</b> Targets GTM problems operators are already trying to solve, so <b>the guide becomes the entry point</b>.</li>
+        <li><b>Teaches the product without selling features.</b> Content is built around <b>workflows and systems</b> rather than feature descriptions.</li>
+        <li><b>Creates category vocabulary.</b> GTM systems and GTM Engineering become <b>the language the market uses</b> to describe the problem.</li>
+        <li><b>Turns users into distribution.</b> Practitioners share tables, workflows, automations and experiments <b>publicly</b>.</li>
+      </ul>
+    </div>
+
+    <div class="pull rv">The best distribution is often <b>someone showing what they built</b>.</div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section id="s4" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">04</p>
+    <h2 class="sec-title rv">The ecosystem is the moat.</h2>
+    <p class="sec-sub rv">The strongest advantage may not be the product alone. <b>It is the network forming around it.</b></p>
+
+    <div class="chain rv">
+      <p class="lbl">The loop</p>
+      <div class="steps">
+        <span class="st">Learn Clay</span>
+        <span class="ar">&#8594;</span>
+        <span class="st">Build workflows</span>
+        <span class="ar">&#8594;</span>
+        <span class="st">Join community</span>
+        <span class="ar">&#8594;</span>
+        <span class="st">Get certified</span>
+        <span class="ar">&#8594;</span>
+        <span class="st">Get hired</span>
+        <span class="ar">&#8594;</span>
+        <span class="st hi">Bring Clay in</span>
+      </div>
+    </div>
+
+    <div class="moat rv">
+      <h4>The number that explains the investment</h4>
+      <p>Clay&#8217;s ecosystem lead has reportedly said that accounts <b>without a strong internal Clay champion</b> are <b>60&#8211;80% more likely to churn at renewal</b>.</p>
+      <div class="moat-n">
+        <div><b>84</b><span>Clay Club chapters</span></div>
+        <div><b>~20</b><span>target customers per workshop</span></div>
+        <div><b>200+</b><span>data and AI vendors under one contract</span></div>
+      </div>
+    </div>
+
+    <p class="statline rv">That single figure reframes the whole ecosystem. Certification, the talent marketplace and job placement are <b>not brand programmes</b>. They are retention infrastructure &#8212; <b>manufacturing the champion whose absence predicts churn</b>.</p>
+
+    <div class="blk rv">
+      <h3 class="blk-h alt">How the ecosystem is actually built</h3>
+      <div class="pil">
+        <div class="pil-i">
+          <h4>Community and training</h4>
+          <p>Chapters, a digital community, live training, certification, a talent marketplace, plus <b>campus and startup programmes</b>.</p>
+        </div>
+        <div class="pil-i">
+          <h4>Certification by project</h4>
+          <p>Validation through <b>demonstrated work, not tests</b>, which produces a portfolio a hiring company can evaluate.</p>
+        </div>
+        <div class="pil-i">
+          <h4>Workshops, not pitches</h4>
+          <p>Roughly twenty target customers at a time, designed around <b>building in the product</b>. Impact is treated as multi-touch rather than last-click.</p>
+        </div>
+        <div class="pil-i">
+          <h4>An owned conference</h4>
+          <p><b>Sculpt GTM</b>, run by Clay itself.</p>
+        </div>
+        <div class="pil-i">
+          <h4>A partner layer</h4>
+          <p>Agencies, consultants and integrators &#8212; the <b>Claygencies</b> &#8212; extend implementation capacity Clay could never staff internally.</p>
+        </div>
+        <div class="pil-i">
+          <h4>Service-led demand</h4>
+          <p>That partner layer generates <b>demand and social proof</b> alongside the implementations themselves.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h">The hybrid conversion model</h3>
+      <div class="two">
+        <div class="two-i">
+          <p class="tk">Motion 01</p>
+          <h4>Self-serve</h4>
+          <p>A practitioner finds a template or guide, <b>builds a workflow and sees value</b>.</p>
+        </div>
+        <div class="two-i">
+          <p class="tk">Motion 02</p>
+          <h4>Enterprise</h4>
+          <p>The workflow spreads internally. More teams use it. <b>Governance and scale requirements bring in sales.</b></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chain rv">
+      <p class="lbl">The expansion path</p>
+      <div class="steps">
+        <span class="st">Individual adoption</span>
+        <span class="ar">&#8594;</span>
+        <span class="st">Internal champion</span>
+        <span class="ar">&#8594;</span>
+        <span class="st">More workflows</span>
+        <span class="ar">&#8594;</span>
+        <span class="st hi">Organisational expansion</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 05 -->
+<section id="s5" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">05</p>
+    <h2 class="sec-title rv">What it produced.</h2>
+    <p class="sec-sub rv">Figures as reported by Clay, its team, or third-party trackers.</p>
+
+    <div class="blk rv">
+      <div class="kpi">
+        <div><b>$100M</b><span>ARR reported in late 2025</span></div>
+        <div><b>~2 yrs</b><span>from roughly $1M to $100M</span></div>
+        <div><b>&gt;200%</b><span>enterprise net revenue retention</span></div>
+        <div><b>~10K</b><span>customers at ~$10K average ACV</span></div>
+        <div><b>~1K</b><span>employees by late 2025</span></div>
+      </div>
+    </div>
+
+    <div class="proof rv">
+      <h3>What the numbers are attributed to.</h3>
+      <p>Clay credits <b>community, education and practitioner-led distribution</b> rather than paid acquisition.</p>
+      <div class="proof-g">
+        <div><b>~15x</b><span>claimed growth per dollar invested, a ratio Clay says has <b>tripled in recent years</b></span></div>
+        <div><b>Zero</b><span>enterprise customers churned, <b>by Clay&#8217;s own statement</b></span></div>
+        <div><b>~$7B</b><span>reported pre-money valuation in late 2026, up from <b>~$3.1B in 2025</b></span></div>
+      </div>
+    </div>
+
+    <p class="statline rv">The six years before the first $1M matter. <b>This looks like a two-year rocket only if you start counting at the point the model clicked.</b></p>
+  </div>
+</section>
+
+
+<!-- 06 -->
+<section id="s6" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">06</p>
+    <h2 class="sec-title rv">Why it works.</h2>
+
+    <div class="blk rv" style="margin-top:30px">
+      <div class="tac">
+        <div class="tac-i">
+          <h4>Category and career path</h4>
+          <p>GTM Engineer gives operators <b>a professional identity</b>, and Clay becomes the tool associated with it.</p>
+        </div>
+        <div class="tac-i">
+          <h4>Education and adoption</h4>
+          <p>Training produces <b>more capable users</b>, not merely more sign-ups.</p>
+        </div>
+        <div class="tac-i">
+          <h4>Community and distribution</h4>
+          <p>Practitioners demonstrate real workflows, which creates <b>credible demand</b>.</p>
+        </div>
+        <div class="tac-i">
+          <h4>Integration and expansion</h4>
+          <p>Because it works across existing tools, every new workflow makes it <b>more embedded and harder to replace</b>.</p>
+        </div>
+        <div class="tac-i">
+          <h4>PLG and enterprise</h4>
+          <p>Self-serve adoption <b>surfaces champions</b>. Sales scales the successful deployments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section id="s7" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">07</p>
+    <h2 class="sec-title rv">What transfers, and what doesn&#8217;t.</h2>
+    <p class="sec-sub rv">This model is widely admired and narrowly applicable. <b>It needs four conditions at once.</b></p>
+
+    <div class="blk rv">
+      <ul class="bl">
+        <li><b>A product complex enough to need teaching.</b> Education only works as a growth engine if there is a real skill barrier. A simple product does not generate students and champions, <b>it generates a help centre</b>.</li>
+        <li><b>A user with career upside attached to mastery.</b> The flywheel runs on practitioners who get hired for knowing the tool. If learning it does not make someone more employable, <b>the ecosystem has no fuel</b>.</li>
+        <li><b>Open category space.</b> Clay could name the GTM Engineer because no one owned it. Naming a category someone else occupies is <b>positioning, not category creation</b>.</li>
+        <li><b>Pricing that does not penalise spread.</b> Per-seat pricing would have made every internal champion <b>a cost centre for the buyer</b>.</li>
+      </ul>
+    </div>
+
+    <div class="pull rv">Most seed and Series A companies have none of these. What is portable at that stage is narrower: <b>lead with the job to be done, treat the guide as the entry point, make the first workflow small enough to prove value alone, and price so internal adoption is free.</b></div>
+
+    <div class="verdict rv">Clay&#8217;s GTM is not built around acquiring accounts. It is built around creating GTM Engineers.</div>
+
+    <div class="chain rv">
+      <p class="lbl">The engine in one line</p>
+      <div class="steps">
+        <span class="st">PLG gets them in</span>
+        <span class="ar">&#8594;</span>
+        <span class="st">Education makes them capable</span>
+        <span class="ar">&#8594;</span>
+        <span class="st">Community keeps them engaged</span>
+        <span class="ar">&#8594;</span>
+        <span class="st hi">Enterprise expands the account</span>
+      </div>
+    </div>
+
+    <p class="closing">Written from public sources. Figures are as reported by Clay, its team or third-party trackers, and are attributed rather than independently verified.</p>
+  </div>
+</section>
+
+<section id="looking">
+  <div class="lf-band">
+    <div class="wrap">
+      <div class="lf-text">
+        <div class="eyebrow rv">What next</div>
+        <h2 class="rv">I am open to anything that brings a <b>sharp learning curve</b>, in and around <b>GTM, Growth and Sales</b>.</h2>
+      </div>
+      <div class="rv lf-cta"><a class="btn-call" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="btn-wa ico" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="eyebrow rv">Contact</div>
+        <h2 class="rv">Let's talk.</h2>
+        <div class="foot-info rv">
+          <p>Prerna Sharma</p>
+          <p class="fi-label">Last employer</p>
+          <p>Senior Manager, Sales &amp; Marketing</p>
+          <p>smartSense Consulting Solutions Pvt. Ltd.</p>
+        </div>
+      </div>
+      <div class="foot-links rv">
+        <a href="mailto:iwbabds@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>iwbabds@gmail.com</a>
+        <a href="https://www.linkedin.com/in/prerna-sharma-2a5a88181/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 00-4 0"/></svg>LinkedIn · Prerna Sharma</a>
+        <a href="tel:+917838971472"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>+91 7838-971-472</a>
+      </div>
+    </div>
+    <div class="foot-facts rv">
+      <div class="ff"><span class="ff-label">Hometown</span><span class="ff-value">Delhi</span></div>
+      <div class="ff"><span class="ff-label">Current location</span><span class="ff-value">GIFT City, Gujarat</span></div>
+      <div class="ff"><span class="ff-label">Availability</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
+      <div class="ff"><span class="ff-label">Relocation</span><span class="ff-value">Open to relocation</span></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© Prerna Sharma.</span>
+    </div>
+  </div>
+</footer>
+<script src="/app.js"></script>
+</body>
+</html>
