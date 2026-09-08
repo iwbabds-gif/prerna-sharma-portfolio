@@ -1290,3 +1290,10 @@ a.td-card:hover .td-go{gap:13px}
 .cs-idx-grid .td-scope span{display:block;line-height:1.5}
 .cs-idx-grid .td-card .td-go{margin-top:auto;padding-top:22px}
 @media(max-width:700px){.cs-idx-grid .td-card h3{min-height:0}}
+
+.nav-cal{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);color:var(--olive-deep);transition:background .2s,border-color .2s}
+.nav-cal:hover{background:var(--olive-soft);border-color:var(--clay-soft)}
+.nav-cal svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.btn-cal.ico{width:46px;height:46px;padding:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--olive-soft);color:var(--olive-deep)}
+.btn-cal.ico:hover{background:var(--clay-soft)}
+.btn-cal.ico svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
