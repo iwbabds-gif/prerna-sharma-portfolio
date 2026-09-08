@@ -1211,6 +1211,146 @@ a.td-card:hover .td-go{gap:13px}
 .csd .dleg-i .dp{font-size:15px;font-weight:600;color:var(--olive-deep);text-align:right}
 .csd .dleg-i .dp em{font-style:normal;display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:1px}
 @media(max-width:820px){.csd .donut{grid-template-columns:1fr;justify-items:center;gap:26px}.csd .dleg{width:100%}}
+
+.work-head .li-exp{margin-top:28px;max-width:480px}
+.work-head .li-exp-head{display:flex;gap:14px;align-items:flex-start}
+.work-head .li-co-logo{width:46px;height:46px;border-radius:10px;background:var(--olive-soft);color:var(--olive-deep);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;letter-spacing:-.01em;flex-shrink:0}
+.work-head .li-co-info h4{font-size:15px;font-weight:600;color:var(--ink);line-height:1.3}
+.work-head .li-co-info p{font-size:12.5px;color:var(--muted);margin-top:2px}
+.work-head .li-roles{margin-top:2px;margin-left:22px;border-left:2px solid var(--line);padding-left:26px}
+.work-head .li-role{position:relative;padding:13px 0}
+.work-head .li-role:first-child{padding-top:12px}
+.work-head .li-role:last-child{padding-bottom:2px}
+.work-head .li-dot{position:absolute;left:-33px;top:20px;width:8px;height:8px;border-radius:50%;background:var(--olive);border:2px solid var(--paper)}
+.work-head .li-role-info h5{font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.4}
+.work-head .li-role-info p{font-size:12.5px;color:var(--muted);margin-top:2px}
+
+.wp-feature{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:26px 28px;display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:26px;margin-top:38px}
+.wf-l{border-right:1px solid var(--line);padding-right:26px}
+.wf-eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive);font-weight:600}
+.wp-feature h3{font-size:24px;letter-spacing:-.02em;margin-top:9px}
+.wf-meta{font-size:13px;color:var(--muted);margin-top:6px}
+.wf-big{font-size:28px;font-weight:600;letter-spacing:-.02em;line-height:1.1;margin-top:20px;background:linear-gradient(100deg,var(--olive) 0%,var(--clay) 92%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wf-sub{font-size:12.5px;color:var(--muted);margin-top:6px}
+.wf-metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.wf-metrics .v{display:block;font-size:16px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+.wf-metrics .l{display:block;font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.35}
+.wf-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:16px}
+.wf-step{background:var(--olive-soft);border-radius:10px;padding:10px 12px;font-size:12.5px;color:var(--ink);line-height:1.4}
+.wf-step i{font-style:normal;color:var(--olive);font-weight:600;margin-right:6px}
+.wf-step b{display:block;font-weight:600;font-size:13.5px;line-height:1.35}
+.wf-step span{display:block;font-size:11.5px;color:var(--muted);margin-top:4px;line-height:1.4}
+.wf-more{margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--olive-deep)}
+.wf-more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s}
+.wp-feature:hover .wf-more svg{transform:translateX(4px)}
+.cs-owned{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-top:18px}
+.cs-owned .lbl{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive);font-weight:600;margin-right:4px}
+.cs-owned span.tg{font-size:12.5px;font-weight:600;color:var(--olive-deep);background:var(--olive-soft);border-radius:8px;padding:6px 12px}
+.gh-lbl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive);font-weight:600;margin-top:34px}
+@media(max-width:860px){.wp-feature{grid-template-columns:1fr;padding:22px}.wf-l{border-right:none;border-bottom:1px solid var(--line);padding-right:0;padding-bottom:20px}.wf-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.wf-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.wf-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.wf-steps{grid-template-columns:1fr}}
+
+.nav-wa{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);color:var(--olive-deep);transition:background .2s,border-color .2s}
+.nav-wa:hover{background:var(--olive-soft);border-color:var(--clay-soft)}
+.nav-wa svg{width:17px;height:17px;fill:currentColor}
+.lf-cta{display:flex;align-items:center;gap:12px}
+.btn-call{display:inline-flex;align-items:center;justify-content:center;background:var(--olive-deep);color:#fff;font-size:14.5px;font-weight:600;border-radius:999px;padding:13px 26px;white-space:nowrap}
+.btn-call:hover{background:var(--olive)}
+.btn-wa.ico{width:46px;height:46px;padding:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
+.btn-wa.ico svg{width:20px;height:20px;margin:0}
+
+.wp-feature{grid-template-columns:minmax(0,290px) minmax(0,1fr)}
+.wp-feature h3{font-size:22px;line-height:1.25}
+.wf-own{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.wf-own span{font-size:12px;font-weight:600;color:var(--olive-deep);background:var(--olive-soft);border-radius:8px;padding:5px 10px}
+.wf-gs{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive);font-weight:600;margin-top:18px}
+.wf-cta{margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#fff;background:var(--olive-deep);border-radius:999px;padding:9px 18px}
+.wf-cta svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s}
+.wp-feature:hover .wf-cta{background:var(--olive)}
+.wp-feature:hover .wf-cta svg{transform:translate(3px,-3px)}
+.wp-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.wp-row .wp-card{width:auto;min-width:0;flex:none;scroll-snap-align:none}
+.wp-tag{display:inline-flex;align-items:center;margin-top:16px;font-size:11.5px;font-weight:600;color:#fff;background:var(--olive-deep);border-radius:999px;padding:6px 13px}
+@media(max-width:860px){.wp-feature{grid-template-columns:1fr}.wp-row{grid-template-columns:1fr}}
+
+.dom-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:22px;max-width:640px}
+.dom{border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:#fff}
+.dom .dm{display:block;font-size:14.5px;font-weight:600;color:var(--ink);letter-spacing:-.01em;line-height:1.3}
+.dom .dt{display:block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);font-weight:600;margin-top:6px}
+.wf-cta{font-size:11.5px;padding:7px 14px;gap:6px;margin-top:16px}
+.wf-cta svg{width:12px;height:12px}
+.wp-status{display:flex;align-items:center;justify-content:flex-end;gap:7px;margin-top:18px;font-size:12px;color:var(--muted)}
+.wp-status i{width:6px;height:6px;border-radius:50%;background:var(--muted);opacity:.55;flex-shrink:0}
+@media(max-width:700px){.dom-grid{grid-template-columns:1fr}}
+
+.dom-line{margin-top:20px;font-size:14.5px;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.dom-line b{color:var(--ink);font-weight:600}
+.dom-line em{font-style:normal;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);font-weight:600;background:var(--olive-soft);border-radius:6px;padding:3px 7px}
+.dom-line s{display:inline-block;width:1px;height:14px;background:var(--line);text-decoration:none;margin:0 4px}
+.tq-link svg.li-ico{fill:currentColor;stroke:none;width:14px;height:14px}
+.wp-eyebrow s,.wf-eyebrow s{display:inline-block;width:1px;height:9px;background:currentColor;opacity:.35;text-decoration:none;margin:0 6px;vertical-align:middle}
+.own-h{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive);font-weight:600;margin-top:auto;padding-top:22px}
+.wp-focus{margin-top:8px;padding-top:0}
+.wf-own{margin-top:8px}
+.wp-card h3{margin-bottom:18px}
+.wp-metric-label{margin-bottom:2px}
+.wp-stats{margin-top:16px}
+
+/* hero domain line */
+.dom-line{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:22px 0 26px}
+.dm-i{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 8px 7px 16px;box-shadow:0 1px 2px rgba(14,27,26,.04)}
+.dm-i b{font-size:14px;font-weight:600;color:var(--ink);letter-spacing:-.01em;line-height:1}
+.dm-i em{font-style:normal;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#fff;background:var(--olive-deep);border-radius:999px;padding:4px 9px;line-height:1}
+.lead-sub{margin-bottom:0}
+.lead-chips{margin-bottom:26px}
+
+/* linkedin brand colour */
+.tq-link svg.li-ico{fill:#0A66C2;stroke:none;width:14px;height:14px}
+
+/* DOO feature card: grey eyebrow, tighter left rail */
+.wf-eyebrow{color:var(--muted)}
+.wp-feature{grid-template-columns:minmax(0,262px) minmax(0,1fr)}
+.wf-l{padding-right:24px}
+.wp-feature h3{font-size:20px;margin-top:11px}
+.wf-big{font-size:26px;margin-top:16px}
+.wf-own{gap:5px;margin-top:7px}
+.wf-own span{font-size:11px;padding:4px 9px;border-radius:7px}
+.wf-l .own-h{margin-top:20px;padding-top:0;font-size:10px}
+
+/* smaller case-study tag */
+.wf-cta{font-size:10.5px;padding:5px 11px;gap:5px;margin-top:14px;letter-spacing:.01em}
+.wf-cta svg{width:10px;height:10px}
+@media(max-width:700px){.dm-i b{font-size:13px}}
+
+.tq-link svg.li-ico{width:13px;height:13px;fill:none;stroke:none;flex-shrink:0}
+.tq-link svg.li-ico rect,.tq-link svg.li-ico circle,.tq-link svg.li-ico path{stroke:none}
+
+.wf-l{display:flex;flex-direction:column}
+.wf-l .wf-cta{margin-top:auto;padding-top:0;align-self:flex-start}
+.wf-l .own-h{margin-top:22px}
+.wf-own{margin-bottom:22px}
+@media(max-width:860px){.wf-own{margin-bottom:14px}.wf-l .wf-cta{margin-top:4px}}
+
+/* ownership block sits at the bottom of the left rail */
+.wf-l .own-h{margin-top:auto;padding-top:26px}
+.wf-own{margin-bottom:0}
+.wf-l .wf-cta{margin-top:0}
+.wf-cta{margin-top:16px}
+@media(max-width:860px){.wf-l .own-h{margin-top:20px;padding-top:0}}
+
+.chapter-status{justify-content:flex-start;margin-top:26px}
+
+/* case study index cards */
+.cs-idx-grid .td-card{padding:28px 26px 26px}
+.cs-tag{align-self:flex-start;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;border-radius:999px;padding:5px 11px;margin-bottom:16px}
+.cs-tag.own{background:var(--olive-deep);color:#fff}
+.cs-tag.ana{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.cs-idx-grid .td-card h3{font-size:21px;margin-bottom:10px;min-height:2.6em}
+.cs-head-line{font-size:15px;font-weight:600;color:var(--olive-deep);line-height:1.4;margin:0}
+.cs-idx-grid .td-scope{margin-top:18px;padding-top:16px;flex-direction:column;gap:7px}
+.cs-idx-grid .td-scope span{display:block;line-height:1.5}
+.cs-idx-grid .td-card .td-go{margin-top:auto;padding-top:22px}
+@media(max-width:700px){.cs-idx-grid .td-card h3{min-height:0}}
 </style>
 </head>
 <body>
@@ -1220,7 +1360,7 @@ a.td-card:hover .td-go{gap:13px}
 <nav>
   <div class="nav-in">
     <a class="logo" href="index.html">PRERNA<span>.</span>SHARMA</a>
-    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="nav-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
   </div>
 </nav>
 
@@ -1229,7 +1369,8 @@ a.td-card:hover .td-go{gap:13px}
     <div class="lead-grid">
       <div>
         <h1 class="rv">I build 0&#8594;1 GTM<span style="color:var(--olive)">.</span></h1>
-        <p class="lead-sub rv"><b>4+ years of go-to-market</b> across B2B SaaS, technology services and consumer IoT.</p>
+        <p class="lead-sub rv"><b>4+ years of go-to-market</b>, across three markets.</p>
+        <div class="dom-line rv"><span class="dm-i"><b>HR Tech</b><em>B2B</em></span><span class="dm-i"><b>Smart Home Technology</b><em>B2C</em></span><span class="dm-i"><b>AI Services Sales</b><em>B2B</em></span></div>
         <div class="lead-chips rv">
           <span class="d-chip"><i></i>Brand Leadership</span>
           <span class="d-chip"><i></i>GTM Strategy</span>
@@ -1259,7 +1400,7 @@ a.td-card:hover .td-go{gap:13px}
         <div class="tq-foot">
           <span class="nm">Prateek Kothari</span>
           <span class="rl">Head, Business Operations &middot; smartSense</span>
-          <a class="tq-link" href="https://www.linkedin.com/in/prerna-sharma-2a5a88181/details/recommendations/" target="_blank" rel="noopener">View on LinkedIn <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+          <a class="tq-link" href="https://www.linkedin.com/in/prerna-sharma-2a5a88181/details/recommendations/" target="_blank" rel="noopener"><svg class="li-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="0" y="0" width="24" height="24" rx="2.35" fill="#007EBB"/><circle cx="5.44" cy="5.44" r="2.1" fill="#fff"/><rect x="3.68" y="9.0" width="3.6" height="11.65" fill="#fff"/><path d="M9.5 9.0h3.6v1.6h.05c.6-1.05 1.95-1.9 3.95-1.9 3.4 0 3.55 2.3 3.55 4.85v7.1h-3.75v-5.9c0-1.4-.03-3.05-1.75-3.05-1.75 0-2.05 1.4-2.05 2.9v6.05H9.5z" fill="#fff"/></svg>View on LinkedIn <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
         </div>
       </div>
       <div class="tq-item rv">
@@ -1268,7 +1409,7 @@ a.td-card:hover .td-go{gap:13px}
         <div class="tq-foot">
           <span class="nm">Ranjana Majumdar</span>
           <span class="rl">Product Design</span>
-          <a class="tq-link" href="https://www.linkedin.com/posts/ranjanamajumdar111777999_productdesigner-productdesign-startedworking-activity-7340806393785892864-cwir" target="_blank" rel="noopener">View on LinkedIn <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+          <a class="tq-link" href="https://www.linkedin.com/posts/ranjanamajumdar111777999_productdesigner-productdesign-startedworking-activity-7340806393785892864-cwir" target="_blank" rel="noopener"><svg class="li-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="0" y="0" width="24" height="24" rx="2.35" fill="#007EBB"/><circle cx="5.44" cy="5.44" r="2.1" fill="#fff"/><rect x="3.68" y="9.0" width="3.6" height="11.65" fill="#fff"/><path d="M9.5 9.0h3.6v1.6h.05c.6-1.05 1.95-1.9 3.95-1.9 3.4 0 3.55 2.3 3.55 4.85v7.1h-3.75v-5.9c0-1.4-.03-3.05-1.75-3.05-1.75 0-2.05 1.4-2.05 2.9v6.05H9.5z" fill="#fff"/></svg>View on LinkedIn <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
         </div>
       </div>
       <div class="tq-item wide rv">
@@ -1277,7 +1418,7 @@ a.td-card:hover .td-go{gap:13px}
         <div class="tq-foot">
           <span class="nm">Kashish Shah</span>
           <span class="rl">Product Design</span>
-          <a class="tq-link" href="https://www.linkedin.com/posts/kashishshah21504_smartsense-productdesign-designinternship-activity-7341708323232067584-HL9L" target="_blank" rel="noopener">View on LinkedIn <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+          <a class="tq-link" href="https://www.linkedin.com/posts/kashishshah21504_smartsense-productdesign-designinternship-activity-7341708323232067584-HL9L" target="_blank" rel="noopener"><svg class="li-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="0" y="0" width="24" height="24" rx="2.35" fill="#007EBB"/><circle cx="5.44" cy="5.44" r="2.1" fill="#fff"/><rect x="3.68" y="9.0" width="3.6" height="11.65" fill="#fff"/><path d="M9.5 9.0h3.6v1.6h.05c.6-1.05 1.95-1.9 3.95-1.9 3.4 0 3.55 2.3 3.55 4.85v7.1h-3.75v-5.9c0-1.4-.03-3.05-1.75-3.05-1.75 0-2.05 1.4-2.05 2.9v6.05H9.5z" fill="#fff"/></svg>View on LinkedIn <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
         </div>
       </div>
     </div>
@@ -1293,39 +1434,46 @@ a.td-card:hover .td-go{gap:13px}
         <p class="sec-sub rv">Four years and four months at smartSense, across the services business and two in-house products, one at a time.</p>
       </div>
     </div>
-    <div class="wp-scroll" id="wpScroll">
-      <div class="wp-card rv">
-        <div class="wp-eyebrow">Consumer IoT</div>
-        <h3>DOO</h3>
-        <p class="wp-role">Connected home ecosystem &middot; 1 yr 4 mo</p>
-        <div class="wp-focus"><span>Brand Strategy</span><span>Demand Generation</span><span>Sales Enablement</span></div>
-        <div class="wp-divider"></div>
-        <div class="wp-metric">8X ARR</div>
-        <div class="wp-metric-label">&#8377;25L &#8594; &#8377;2Cr ARR</div>
-        <div class="wp-stats"><div class="wp-stat"><span class="v">5M+</span><span class="l">reach</span></div><div class="wp-stat"><span class="v">20X</span><span class="l">brand engagement</span></div><div class="wp-stat"><span class="v">40X</span><span class="l">website visits</span></div></div>
+    <a class="wp-feature rv" href="doo-case-study.html">
+      <div class="wf-l">
+        <div class="wf-eyebrow">DOO <s></s> B2C <s></s> 1 yr 4 mo</div>
+        <h3>Lifestyle brand in Smart home technology</h3>
+        <p class="wf-big">&#8377;25L &#8594; &#8377;2Cr</p>
+        <p class="own-h">What I owned</p>
+        <div class="wf-own"><span>Brand strategy</span><span>Demand pipeline</span><span>Sales enablement</span></div>
       </div>
+      <div>
+        <div class="wf-metrics"><div><span class="v">~80%</span><span class="l">lower CPL</span></div><div><span class="v">~4X</span><span class="l">on ad spend</span></div><div><span class="v">5M+</span><span class="l">reach</span></div><div><span class="v">40X</span><span class="l">site visits</span></div><div><span class="v">20X</span><span class="l">engagement</span></div></div>
+        <p class="wf-gs">Growth story</p>
+        <div class="wf-steps"><div class="wf-step"><i>01</i>Build credibility before spend</div><div class="wf-step"><i>02</i>Experiment till you find the buyer</div><div class="wf-step"><i>03</i>Deep dive on data to scale</div><div class="wf-step"><i>04</i>Hold positioning when early</div><div class="wf-step"><i>05</i>Listen closely to sales</div><div class="wf-step"><i>06</i>Check the funnel leak downwards</div></div>
+        <span class="wf-cta">Read the case study <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </div>
+    </a>
+    <div class="wp-row">
       <div class="wp-card rv">
-        <div class="wp-eyebrow">B2B SaaS</div>
-        <h3>Foster</h3>
-        <p class="wp-role">B2B SaaS for hiring from colleges &middot; 2 years</p>
+        <div class="wp-eyebrow">Foster <s></s> B2B SaaS <s></s> 2 years</div>
+        <h3>HR Tech for Campus Hiring</h3>
+                <p class="own-h">What I owned</p>
         <div class="wp-focus"><span>Brand Operations</span><span>Sales Enablement</span><span>Product Operations</span><span>Partnerships</span></div>
         <div class="wp-divider"></div>
         <div class="wp-metric">$150,000+</div>
         <div class="wp-metric-label">revenue, built from zero</div>
         <div class="wp-stats"><div class="wp-stat"><span class="v">10,000+</span><span class="l">colleges onboarded</span></div><div class="wp-stat"><span class="v">1 lakh+</span><span class="l">students reached</span></div><div class="wp-stat"><span class="v">2,000+</span><span class="l">college activations</span></div></div>
+        <p class="wp-status"><i></i>In progress</p>
       </div>
       <div class="wp-card rv">
-        <div class="wp-eyebrow">Services sales</div>
-        <h3>smartSense</h3>
-        <p class="wp-role">B2B technology services &middot; 1 year</p>
+        <div class="wp-eyebrow">smartSense <s></s> B2B <s></s> 1 year</div>
+        <h3>AI services sales in US market</h3>
+                <p class="own-h">What I owned</p>
         <div class="wp-focus"><span>Demand Generation</span><span>Sales Enablement</span><span>Pre-sales</span></div>
         <div class="wp-divider"></div>
         <div class="wp-metric">$1M+</div>
         <div class="wp-metric-label">across 4 enterprise deals</div>
         <div class="wp-stats"><div class="wp-stat"><span class="v">$5M+</span><span class="l">pipeline created</span></div><div class="wp-stat"><span class="v">100+</span><span class="l">sales enablement assets</span></div><div class="wp-stat"><span class="v">4</span><span class="l">enterprise deals closed</span></div></div>
+        <p class="wp-status"><i></i>In progress</p>
       </div>
     </div>
-    <a class="sec-more rv" href="work.html">Full story <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="sec-more rv" href="work.html">Know more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
 </section>
 
@@ -1339,7 +1487,8 @@ a.td-card:hover .td-go{gap:13px}
         <div class="ix">01</div>
         <div>
           <h3>AI SaaS for product video generation</h3>
-          <p>Customer discovery, product R&amp;D and prototyping over 7&#8211;8 months, ending in four to five working builds and a tested UI.</p>
+          <p>Customer discovery, product R&amp;D and prototyping, ending in working builds and a tested UI.</p>
+          <div class="sp-tags"><span>0 &#8594; Prototype</span><span>7&#8211;8 months</span><span>4&#8211;5 working builds</span><span>30&#8211;35 hrs a week</span></div>
         </div>
         <a class="go" href="work.html#venture">Know more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
       </div>
@@ -1347,8 +1496,8 @@ a.td-card:hover .td-go{gap:13px}
         <div class="ix">02</div>
         <div>
           <h3>Automated motion for job search</h3>
-          <p>A set of agents that source companies, enrich them, watch hiring signals and follow every application through to a reply.</p>
-          <div class="sp-tags"><span>Source</span><span>Enrich</span><span>Convert</span><span>Measure</span></div>
+          <p>A system that sources companies, enriches them, watches hiring signals and follows every application through to a reply.</p>
+          <div class="sp-tags"><span>19 Claude skills</span><span>Profile positioning</span><span>Apollo + LinkedIn + Gmail</span><span>Tracking</span></div>
         </div>
         <a class="go" href="job-search-system.html">Know more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
       </div>
@@ -1413,7 +1562,7 @@ a.td-card:hover .td-go{gap:13px}
         <div class="eyebrow rv">What next</div>
         <h2 class="rv">I am open to anything that brings a <b>sharp learning curve</b>, in and around <b>GTM, Growth and Sales</b>.</h2>
       </div>
-      <div class="rv"><a class="btn-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+      <div class="rv lf-cta"><a class="btn-call" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="btn-wa ico" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -1440,7 +1589,7 @@ a.td-card:hover .td-go{gap:13px}
     <div class="foot-facts rv">
       <div class="ff"><span class="ff-label">Hometown</span><span class="ff-value">Delhi</span></div>
       <div class="ff"><span class="ff-label">Current location</span><span class="ff-value">GIFT City, Gujarat</span></div>
-      <div class="ff"><span class="ff-label">Notice period</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
+      <div class="ff"><span class="ff-label">Availability</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
       <div class="ff"><span class="ff-label">Relocation</span><span class="ff-value">Open to relocation</span></div>
     </div>
     <div class="foot-bottom">
@@ -1453,103 +1602,99 @@ a.td-card:hover .td-go{gap:13px}
 <nav>
   <div class="nav-in">
     <a class="logo" href="index.html">PRERNA<span>.</span>SHARMA</a>
-    <div class="nav-links"><a href="work.html" class="active">Work</a><a href="about.html">About</a><a href="case-studies.html">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+    <div class="nav-links"><a href="work.html" class="active">Work</a><a href="about.html">About</a><a href="case-studies.html">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="nav-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
   </div>
 </nav>
 
 <section class="page-head work-head">
   <div class="wrap">
     <h1 class="rv">Work.</h1>
-    <p class="rv">Four years and four months at <a class="co-link" href="https://www.smartsensesolutions.com/" target="_blank" rel="noopener">smartSense</a>, <span class="wh-dates">April 2022 &#8211; July 2026</span><span class="pd">.</span> Two in-house products and a services business, plus a side project and the systems I built for myself.</p>
-    <div class="hero-types rv">
-      <span class="d-chip"><i></i>Consumer IoT Brand</span>
-      <span class="d-chip"><i></i>B2B SaaS</span>
-      <span class="d-chip"><i></i>Technology Services Sales</span>
+    <p class="rv">Four years and four months at <a class="co-link" href="https://www.smartsensesolutions.com/" target="_blank" rel="noopener">smartSense</a>. Two in-house products and a services business, plus a side project and the systems I built for myself.</p>
+    <div class="li-exp rv">
+      <div class="li-exp-head">
+        <div class="li-co-logo">sS</div>
+        <div class="li-co-info"><h4>smartSense</h4><p>Full-time &middot; 4 yrs 4 mos</p></div>
+      </div>
+      <div class="li-roles">
+        <div class="li-role">
+          <span class="li-dot"></span>
+          <div class="li-role-info"><h5>Sr. Manager, Sales &amp; Marketing</h5><p>Apr 2024 &#8211; Jul 2026 &middot; 2 yrs 4 mos</p></div>
+        </div>
+        <div class="li-role">
+          <span class="li-dot"></span>
+          <div class="li-role-info"><h5>Manager, Sales &amp; Marketing</h5><p>Apr 2022 &#8211; Mar 2024 &middot; 2 yrs</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="dom-line rv">
+      <span class="dm-i"><b>HR Tech</b><em>B2B</em></span>
+      <span class="dm-i"><b>Smart Home Technology</b><em>B2C</em></span>
+      <span class="dm-i"><b>AI Services Sales</b><em>B2B</em></span>
     </div>
   </div>
 </section>
 
 <section id="part3" class="chapter">
   <div class="wrap">
-    <div class="eyebrow rv">Consumer IoT Brand</div>
-    <h2 class="sec-title rv">Connected home ecosystem.</h2>
-    <p class="chapter-meta rv"><a href="https://thedoo.io/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:var(--ink);font-weight:600">DOO</a> &nbsp;·&nbsp; April 2025 &#8211; July 2026 &nbsp;·&nbsp; B2C</p>
-    <div class="cs-own rv">
-      <div><span class="co-k">What I owned</span><p><b>Brand and demand generation end to end</b>, including the <b>ad budget</b>. I planned and executed in quarters.</p></div>
-      <div><span class="co-k">Conditions</span><p>A <b>25&#8211;30 people</b> team, <b>10 on the business side</b> with <b>5&#8211;6 in direct sales</b>. Marketing was <b>me, an associate, a designer</b> and one or two interns. The product line already had fit; revenue before this was <b>network and referral driven</b>.</p></div>
-      </div>
-    <div class="cs-roles rv">
-      <div class="cs-focus"><span class="lbl">Led end to end</span><b>Brand Strategy</b><span class="sep">·</span><b>Paid Demand Generation</b><span class="sep">·</span><b>Ad Budget</b></div>
-      <div class="cs-focus alt"><span class="lbl">Assisted on</span><b>Customer Insights into Strategy</b><span class="sep">·</span><b>Sales Enablement</b></div>
-    </div>
+    <div class="eyebrow rv">Lifestyle brand</div>
+    <h2 class="sec-title rv">DOO&#8217;s brand strategy and paid demand engine.</h2>
+    <p class="chapter-meta rv">1 yr 4 mo &nbsp;&middot;&nbsp; B2C &nbsp;&middot;&nbsp; <a href="https://thedoo.io/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:var(--ink);font-weight:600">thedoo.io</a></p>
+
+    <div class="cs-owned rv"><span class="lbl">What I owned</span><span class="tg">Brand strategy</span><span class="tg">Demand pipeline</span><span class="tg">Sales enablement</span></div>
+
     <div class="cs-head rv">
-      <div class="cs-result"><span class="lbl">Result</span><span class="big">&#8377;25L &#8594; &#8377;2Cr</span><span class="sub">~$30K &#8594; $240K ARR</span></div>
-      <div class="cs-stats"><div class="cs-stat"><span class="v">~80%</span><span class="l">lower cost per lead</span></div><div class="cs-stat"><span class="v">~5X</span><span class="l">return on ad spend</span></div><div class="cs-stat"><span class="v">5M+</span><span class="l">reach</span></div><div class="cs-stat"><span class="v">40X</span><span class="l">website visits</span></div><div class="cs-stat"><span class="v">20X</span><span class="l">brand engagement</span></div></div>
+      <div class="cs-result"><span class="lbl">Result</span><span class="big">&#8377;25L &#8594; &#8377;2Cr</span><span class="sub">8X ARR in 1 yr 4 mo &middot; ~$30K &#8594; ~$240K</span></div>
+      <div class="cs-stats"><div class="cs-stat"><span class="v">~80%</span><span class="l">lower cost per lead</span></div><div class="cs-stat"><span class="v">~4X</span><span class="l">return on ad spend</span></div><div class="cs-stat"><span class="v">5M+</span><span class="l">reach</span></div><div class="cs-stat"><span class="v">40X</span><span class="l">website visits</span></div><div class="cs-stat"><span class="v">20X</span><span class="l">brand engagement</span></div></div>
     </div>
-    <div class="cs-who rv"><span class="lbl">Who bought it</span>Homeowners buying new, renovating, or upgrading. Average order <b>&#8377;1&#8211;1.5L</b>, ranging from &#8377;20&#8211;30K to &#8377;4L. <b>70&#8211;80%</b> came direct through Meta, <b>20&#8211;30%</b> through channel partners &#8212; interior designers, architects and system integrators &#8212; and a small share through expos.</div>
-    <div class="chapter-grid one">
-      <div class="chapter-col learned rv"><h4><i></i>What DOO taught me</h4>
-        <ul>
-          <li><b>Credibility has to exist before the ad runs.</b> We were boosting posts against a page with nothing behind it. Rebuilding positioning, social and the website first is what made paid economics work at all.</li>
-          <li><b>The audience is the campaign.</b> Most of the cost-per-lead drop came from testing our way to the right ICP, not from creative or budget.</li>
-          <li><b>Top of funnel is capped by what the bottom can absorb.</b> Spend kept climbing and conversion didn't follow, because sales capacity and process was still building to match it.</li>
-          <li><b>Sit with sales or you are guessing.</b> Staying close to the consultation team surfaced why deals stalled, which fed enablement and product decisions.</li>
-          <li><b>Funnel, brand and ops scale together or none of them do.</b> When one lags, it sets the ceiling for the other two.</li>
-                  </ul>
-      </div>
-    </div>
+
+    <p class="gh-lbl rv">Growth story</p>
+    <div class="wf-steps rv"><div class="wf-step"><i>01</i><b>Build credibility before spend</b><span>250 &#8594; 4K followers, 1M+ organic reach, 3X engagement</span></div><div class="wf-step"><i>02</i><b>Experiment till you find the buyer</b><span>Intent over interest, persona splits</span></div><div class="wf-step"><i>03</i><b>Deep dive on data to scale</b><span>CPL ~68% lower, cold to retargeting</span></div><div class="wf-step"><i>04</i><b>Hold positioning when early</b><span>Understand the market sentiments first</span></div><div class="wf-step"><i>05</i><b>Listen closely to sales</b><span>Influenced brand and product decisions</span></div><div class="wf-step"><i>06</i><b>Check the funnel leak downwards</b><span>Enablement and brand ops</span></div></div>
+
+    <a class="sec-more rv" href="doo-case-study.html">Read the case study <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
 </section>
 
 <section id="part1" class="chapter">
   <div class="wrap">
-    <div class="eyebrow rv">B2B SaaS</div>
-    <h2 class="sec-title rv">B2B SaaS for hiring from colleges.</h2>
-    <p class="chapter-meta rv"><a href="https://fosterclub.io/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:var(--ink);font-weight:600">Foster</a> &nbsp;·&nbsp; April 2022 &#8211; March 2024</p>
-    <div class="cs-own rv">
-      <div><span class="co-k">What I owned</span><p>The <b>supply side, end to end</b>, built from nothing. The demand side was not mine, though I supported it.</p></div>
-      <div><span class="co-k">Conditions</span><p>A <b>25&#8211;30 people</b> team, <b>10 of us</b> on the business side. I joined <b>before the MVP existed</b> and was already working colleges a month before it shipped.</p></div>
-    </div>
-    <div class="cs-roles rv">
-      <div class="cs-focus"><span class="lbl">Led end to end</span><b>Supply-side GTM</b><span class="sep">·</span><b>Partnerships</b><span class="sep">·</span><b>Campus Activations</b></div>
-      <div class="cs-focus alt"><span class="lbl">Assisted on</span><b>GTM Strategy</b><span class="sep">·</span><b>Sales Enablement</b><span class="sep">·</span><b>Product Demos</b></div>
-    </div>
+    <div class="eyebrow rv">HR Tech &middot; B2B SaaS</div>
+    <h2 class="sec-title rv">HR Tech for campus hiring.</h2>
+    <p class="chapter-meta rv">2 years &nbsp;&middot;&nbsp; B2B SaaS &nbsp;&middot;&nbsp; <a href="https://fosterclub.io/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:var(--ink);font-weight:600">fosterclub.io</a></p>
+
+    <div class="cs-owned rv"><span class="lbl">What I owned</span><span class="tg">Supply-side GTM</span><span class="tg">Partnerships</span><span class="tg">Campus activations</span></div>
+
     <div class="cs-head rv">
       <div class="cs-result"><span class="lbl">Result</span><span class="big">$150,000+</span><span class="sub">revenue, built from zero</span></div>
       <div class="cs-stats"><div class="cs-stat"><span class="v">10,000+</span><span class="l">colleges onboarded</span></div><div class="cs-stat"><span class="v">6,000+</span><span class="l">cold calls</span></div><div class="cs-stat"><span class="v">1,500+</span><span class="l">campus drives</span></div><div class="cs-stat"><span class="v">1,200+</span><span class="l">graduates placed</span></div><div class="cs-stat"><span class="v">80+</span><span class="l">product demo calls</span></div><div class="cs-stat"><span class="v">100+</span><span class="l">workshops and competitions</span></div></div>
     </div>
-    <div class="cs-who rv"><span class="lbl">Who was on it</span>Employers included <b>HDFC, Skydo, Mokobara, NuTaste, befree, Certif-ID, Asite, ASQI, Glide</b> and <b>The Financialist</b>. On the college side, the majority were <b>tier 3 to tier 5</b> institutions, alongside a few like <b>ICFAI, Amity, SIBM, NITs</b> and <b>IIITs</b>.</div>
+
     <div class="chapter-grid one">
       <div class="chapter-col learned rv"><h4><i></i>What Foster taught me</h4>
         <ul>
           <li><b>Design from both sides, or the whole thing stalls.</b> We built from the employer's point of view without enough customer conversation, and missed that colleges ran their own institutional decision cycle.</li>
-          <li><b>Whatever has to happen first sets the ceiling.</b> A college had to be onboarded before any of its students could join, so one approval cycle gated everything downstream.</li>
           <li><b>Narrative is a growth lever, not decoration.</b> We moved from selling a placement management tool to a college discovery tool for employers, and college-side adoption went up.</li>
           <li><b>Effort scales linearly. Systems scale exponentially.</b> The supply side became a system. The parts that stayed manual never compounded.</li>
           <li><b>Resourced to exist is not resourced to win.</b> Enough to keep going is not enough to break through. Constraints can kill a product faster than the market does.</li>
         </ul>
       </div>
     </div>
+
+    <p class="wp-status chapter-status rv"><i></i>Case study in progress</p>
   </div>
 </section>
 
 <section id="part2" class="chapter">
   <div class="wrap">
-    <div class="eyebrow rv">Technology Services Sales</div>
-    <h2 class="sec-title rv">Mid-market, SME and Enterprise sales.</h2>
-    <p class="chapter-meta rv"><a href="https://www.smartsensesolutions.com/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:var(--ink);font-weight:600">smartSense</a> &nbsp;·&nbsp; April 2024 &#8211; March 2025</p>
-    <div class="cs-own rv">
-      <div><span class="co-k">What I owned</span><p>The <b>LinkedIn demand generation funnel</b> and the <b>ABM research</b> behind it, plus <b>sales enablement</b> and <b>pre-sales</b>. <b>Pipeline creation was mine</b>. The closes belonged to sales.</p></div>
-      <div><span class="co-k">Conditions</span><p>A <b>150 people</b> company. This was the services business, not a product, sold to <b>mid-market, SME and enterprise</b> buyers.</p></div>
-    </div>
-    <div class="cs-roles rv">
-      <div class="cs-focus"><span class="lbl">Led end to end</span><b>LinkedIn Demand Generation</b><span class="sep">·</span><b>ABM Research</b><span class="sep">·</span><b>Pipeline Creation</b><span class="sep">·</span><b>Sales Enablement</b><span class="sep">·</span><b>Pre-sales</b></div>
-      <div class="cs-focus alt"><span class="lbl">Assisted on</span><b>GTM Strategy</b><span class="sep">·</span><b>Demo Calls</b><span class="sep">·</span><b>Deal Closures</b></div>
-    </div>
+    <div class="eyebrow rv">AI Services Sales &middot; B2B</div>
+    <h2 class="sec-title rv">AI services sales in the US market.</h2>
+    <p class="chapter-meta rv">1 year &nbsp;&middot;&nbsp; B2B &nbsp;&middot;&nbsp; <a href="https://www.smartsensesolutions.com/" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--olive);text-underline-offset:3px;color:var(--ink);font-weight:600">smartsensesolutions.com</a></p>
+
+    <div class="cs-owned rv"><span class="lbl">What I owned</span><span class="tg">Demand generation</span><span class="tg">ABM research</span><span class="tg">Pipeline creation</span><span class="tg">Sales enablement</span><span class="tg">Pre-sales</span></div>
+
     <div class="cs-head rv">
       <div class="cs-result"><span class="lbl">Result</span><span class="big">$1M+</span><span class="sub">revenue across 4 enterprise deals</span></div>
       <div class="cs-stats"><div class="cs-stat"><span class="v">$5M+</span><span class="l">pipeline created</span></div><div class="cs-stat"><span class="v">4</span><span class="l">enterprise deals closed</span></div><div class="cs-stat"><span class="v">100+</span><span class="l">sales enablement assets</span></div></div>
     </div>
+
     <div class="chapter-grid one">
       <div class="chapter-col learned rv"><h4><i></i>What smartSense taught me</h4>
         <ul>
@@ -1558,9 +1703,10 @@ a.td-card:hover .td-go{gap:13px}
         </ul>
       </div>
     </div>
+
+    <p class="wp-status chapter-status rv"><i></i>Case study in progress</p>
   </div>
 </section>
-
 
 <section id="venture" class="chapter">
   <div class="wrap">
@@ -1629,7 +1775,7 @@ a.td-card:hover .td-go{gap:13px}
         <div class="eyebrow rv">What next</div>
         <h2 class="rv">I am open to anything that brings a <b>sharp learning curve</b>, in and around <b>GTM, Growth and Sales</b>.</h2>
       </div>
-      <div class="rv"><a class="btn-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+      <div class="rv lf-cta"><a class="btn-call" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="btn-wa ico" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -1656,7 +1802,7 @@ a.td-card:hover .td-go{gap:13px}
     <div class="foot-facts rv">
       <div class="ff"><span class="ff-label">Hometown</span><span class="ff-value">Delhi</span></div>
       <div class="ff"><span class="ff-label">Current location</span><span class="ff-value">GIFT City, Gujarat</span></div>
-      <div class="ff"><span class="ff-label">Notice period</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
+      <div class="ff"><span class="ff-label">Availability</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
       <div class="ff"><span class="ff-label">Relocation</span><span class="ff-value">Open to relocation</span></div>
     </div>
     <div class="foot-bottom">
@@ -1669,7 +1815,7 @@ a.td-card:hover .td-go{gap:13px}
 <nav>
   <div class="nav-in">
     <a class="logo" href="index.html">PRERNA<span>.</span>SHARMA</a>
-    <div class="nav-links"><a href="work.html">Work</a><a href="about.html" class="active">About</a><a href="case-studies.html">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+    <div class="nav-links"><a href="work.html">Work</a><a href="about.html" class="active">About</a><a href="case-studies.html">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="nav-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
   </div>
 </nav>
 
@@ -1704,19 +1850,23 @@ a.td-card:hover .td-go{gap:13px}
 <section id="c-ai" class="chapter">
   <div class="wrap">
     <h2 class="sec-title rv">I am obsessed with AI.</h2>
-    <div class="ai-builds">
-      <a class="ai-card rv" href="work.html#venture">
-        <div class="k">Side project</div>
-        <h3>Agentic AI for video generation</h3>
-        <div class="v">0 &#8594; Prototype</div>
-        <p class="d">7&#8211;8 months. 4&#8211;5 working builds. 30&#8211;35 hours a week, alongside a full-time job.</p>
+    <div class="td-list">
+      <a class="td-item rv" href="work.html#venture">
+        <div class="ix">01</div>
+        <div>
+          <h3>AI SaaS for product video generation</h3>
+          <p>Customer discovery, product R&amp;D and prototyping, ending in working builds and a tested UI.</p>
+          <div class="sp-tags"><span>0 &#8594; Prototype</span><span>7&#8211;8 months</span><span>4&#8211;5 working builds</span><span>30&#8211;35 hrs a week</span></div>
+        </div>
         <span class="go">Know more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
       </a>
-      <a class="ai-card rv" href="job-search-system.html">
-        <div class="k">Systems I run</div>
-        <h3>My job search, automated</h3>
-        <div class="v">19 skills</div>
-        <p class="d">Four layers &#8212; source, enrich, convert, measure &#8212; on Google Sheets. 217 companies tracked, every application followed through to a reply.</p>
+      <a class="td-item rv" href="job-search-system.html">
+        <div class="ix">02</div>
+        <div>
+          <h3>Automated motion for job search</h3>
+          <p>A system that sources companies, enriches them, watches hiring signals and follows every application through to a reply.</p>
+          <div class="sp-tags"><span>19 Claude skills</span><span>Profile positioning</span><span>Apollo + LinkedIn + Gmail</span><span>Tracking</span></div>
+        </div>
         <span class="go">Know more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
       </a>
     </div>
@@ -1738,13 +1888,18 @@ a.td-card:hover .td-go{gap:13px}
     <h2 class="sec-title rv">I am always learning.</h2>
     <p class="td-label rv">Case studies</p>
     <div class="td-list">
-      <a class="td-item rv" href="reo-case-study.html">
+      <a class="td-item rv" href="doo-case-study.html">
         <div class="ix">01</div>
+        <div><h3>DOO</h3><p>Brand and paid demand engine, built on a page with nothing behind it.</p></div>
+        <span class="go">Read it <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="td-item rv" href="reo-case-study.html">
+        <div class="ix">02</div>
         <div><h3>Reo.Dev</h3><p>Category-led content pull engine, taken apart end to end.</p></div>
         <span class="go">Read it <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
       </a>
       <a class="td-item rv" href="clay-case-study.html">
-        <div class="ix">02</div>
+        <div class="ix">03</div>
         <div><h3>Clay</h3><p>Ecosystem-led GTM engine, and the four conditions it depends on.</p></div>
         <span class="go">Read it <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
       </a>
@@ -1754,7 +1909,7 @@ a.td-card:hover .td-go{gap:13px}
 
 <section id="c-push">
   <div class="wrap">
-    <h2 class="sec-title rv">I constantly push myself, and the people around me.</h2>
+    <h2 class="sec-title rv">I am compassionate.</h2>
     <div class="qual rv">
       <span class="pill">Ambitious</span><span class="pill">Energetic</span><span class="pill">Compassionate</span><span class="pill">Curious</span><span class="pill">Direct</span><span class="pill">Restless</span>
     </div>
@@ -1764,8 +1919,8 @@ a.td-card:hover .td-go{gap:13px}
         <div class="qa"><span class="nm">Kashish Shah</span><span class="rl">Product Design</span><a href="https://www.linkedin.com/posts/kashishshah21504_smartsense-productdesign-designinternship-activity-7341708323232067584-HL9L" target="_blank" rel="noopener">LinkedIn</a></div>
       </div>
       <div class="pq rv">
-        <blockquote>Prerna pairs rare devotion with genuine creativity. She&#8217;s smart, pours herself into her work from start to finish, and always keeps her eye on results.</blockquote>
-        <div class="qa"><span class="nm">Prateek Kothari</span><span class="rl">Head, Business Operations &middot; smartSense</span><a href="https://www.linkedin.com/in/prerna-sharma-2a5a88181/details/recommendations/" target="_blank" rel="noopener">LinkedIn</a></div>
+        <blockquote>&#8230;to receive daily guidance from my industry mentor Prerna Sharma. My experience with her has been so positive, that I can only think of words beginning with P&#8230; like Phenomenal, Progressive and Prodigal!</blockquote>
+        <div class="qa"><span class="nm">Ranjana Majumdar</span><span class="rl">Product Design</span><a href="https://www.linkedin.com/posts/ranjanamajumdar111777999_productdesigner-productdesign-startedworking-activity-7340806393785892864-cwir" target="_blank" rel="noopener">LinkedIn</a></div>
       </div>
     </div>
   </div>
@@ -1810,7 +1965,7 @@ a.td-card:hover .td-go{gap:13px}
         <div class="eyebrow rv">What next</div>
         <h2 class="rv">I am open to anything that brings a <b>sharp learning curve</b>, in and around <b>GTM, Growth and Sales</b>.</h2>
       </div>
-      <div class="rv"><a class="btn-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+      <div class="rv lf-cta"><a class="btn-call" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="btn-wa ico" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -1839,7 +1994,7 @@ a.td-card:hover .td-go{gap:13px}
     <div class="foot-facts rv">
       <div class="ff"><span class="ff-label">Hometown</span><span class="ff-value">Delhi</span></div>
       <div class="ff"><span class="ff-label">Current location</span><span class="ff-value">GIFT City, Gujarat</span></div>
-      <div class="ff"><span class="ff-label">Notice period</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
+      <div class="ff"><span class="ff-label">Availability</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
       <div class="ff"><span class="ff-label">Relocation</span><span class="ff-value">Open to relocation</span></div>
     </div>
     <div class="foot-bottom">
@@ -1854,7 +2009,7 @@ a.td-card:hover .td-go{gap:13px}
 <nav>
   <div class="nav-in">
     <a class="logo" href="index.html">PRERNA<span>.</span>SHARMA</a>
-    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html" class="active">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html" class="active">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="nav-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
   </div>
 </nav>
 
@@ -1867,31 +2022,32 @@ a.td-card:hover .td-go{gap:13px}
 <section style="padding-top:64px">
   <div class="wrap">
     <div class="cs-idx-grid">
-      <a class="td-card rv" href="reo-case-study.html">
-        <h3>Reo.Dev&#8217;s category-led content pull engine</h3>
-        <div class="td-scope">
-          <span><b>Company</b> Reo.Dev</span>
-          <span><b>Positioning</b> The Technical GTM Mesh</span>
-          <span><b>Audience</b> GTM teams selling to technical buyers</span>
-        </div>
+      <a class="td-card rv" href="doo-case-study.html">
+        <span class="cs-tag own">Own work</span>
+        <h3>DOO&#8217;s brand and paid demand engine</h3>
+        <p class="cs-head-line">&#8377;25L &#8594; &#8377;2Cr ARR in 1 yr 4 mo</p>
+        <div class="td-scope"><span><b>Owned</b> Brand strategy, demand pipeline, sales enablement</span><span><b>Market</b> Smart home technology &middot; B2C</span></div>
         <span class="td-go">Read more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
       </a>
       <a class="td-card rv" href="job-search-system.html">
+        <span class="cs-tag own">Own work</span>
         <h3>I run my job search as a GTM system</h3>
-        <div class="td-scope">
-          <span><b>Built with</b> Claude, Apps Script, Google Sheets</span>
-          <span><b>Skills written</b> 19</span>
-          <span><b>Period</b> June &#8211; September 2026</span>
-        </div>
+        <p class="cs-head-line">19 Claude skills, one pipeline</p>
+        <div class="td-scope"><span><b>Built</b> Profile positioning, sourcing, signals, outreach, tracking</span><span><b>Stack</b> Claude, Apps Script, Google Sheets</span></div>
+        <span class="td-go">Read more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="td-card rv" href="reo-case-study.html">
+        <span class="cs-tag ana">Analysis</span>
+        <h3>Reo.Dev&#8217;s category-led content pull engine</h3>
+        <p class="cs-head-line">The Technical GTM Mesh</p>
+        <div class="td-scope"><span><b>Company</b> Reo.Dev &middot; developer intent data</span><span><b>Read for</b> Selling to technical buyers</span></div>
         <span class="td-go">Read more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
       </a>
       <a class="td-card rv" href="clay-case-study.html">
+        <span class="cs-tag ana">Analysis</span>
         <h3>Clay&#8217;s ecosystem-led GTM engine</h3>
-        <div class="td-scope">
-          <span><b>Company</b> Clay</span>
-          <span><b>Positioning</b> GTM infrastructure</span>
-          <span><b>Audience</b> GTM Engineers and technical revenue teams</span>
-        </div>
+        <p class="cs-head-line">GTM infrastructure, not a tool</p>
+        <div class="td-scope"><span><b>Company</b> Clay</span><span><b>Read for</b> Ecosystem-led growth</span></div>
         <span class="td-go">Read more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
       </a>
     </div>
@@ -1906,7 +2062,7 @@ a.td-card:hover .td-go{gap:13px}
         <div class="eyebrow rv">What next</div>
         <h2 class="rv">I am open to anything that brings a <b>sharp learning curve</b>, in and around <b>GTM, Growth and Sales</b>.</h2>
       </div>
-      <div class="rv"><a class="btn-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+      <div class="rv lf-cta"><a class="btn-call" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="btn-wa ico" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -1933,7 +2089,7 @@ a.td-card:hover .td-go{gap:13px}
     <div class="foot-facts rv">
       <div class="ff"><span class="ff-label">Hometown</span><span class="ff-value">Delhi</span></div>
       <div class="ff"><span class="ff-label">Current location</span><span class="ff-value">GIFT City, Gujarat</span></div>
-      <div class="ff"><span class="ff-label">Notice period</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
+      <div class="ff"><span class="ff-label">Availability</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
       <div class="ff"><span class="ff-label">Relocation</span><span class="ff-value">Open to relocation</span></div>
     </div>
     <div class="foot-bottom">
@@ -1948,7 +2104,7 @@ a.td-card:hover .td-go{gap:13px}
 <nav>
   <div class="nav-in">
     <a class="logo" href="index.html">PRERNA<span>.</span>SHARMA</a>
-    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html" class="active">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html" class="active">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="nav-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
   </div>
 </nav>
 
@@ -2219,7 +2375,7 @@ a.td-card:hover .td-go{gap:13px}
         <div class="eyebrow rv">What next</div>
         <h2 class="rv">I am open to anything that brings a <b>sharp learning curve</b>, in and around <b>GTM, Growth and Sales</b>.</h2>
       </div>
-      <div class="rv"><a class="btn-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+      <div class="rv lf-cta"><a class="btn-call" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="btn-wa ico" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -2246,7 +2402,7 @@ a.td-card:hover .td-go{gap:13px}
     <div class="foot-facts rv">
       <div class="ff"><span class="ff-label">Hometown</span><span class="ff-value">Delhi</span></div>
       <div class="ff"><span class="ff-label">Current location</span><span class="ff-value">GIFT City, Gujarat</span></div>
-      <div class="ff"><span class="ff-label">Notice period</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
+      <div class="ff"><span class="ff-label">Availability</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
       <div class="ff"><span class="ff-label">Relocation</span><span class="ff-value">Open to relocation</span></div>
     </div>
     <div class="foot-bottom">
@@ -2261,7 +2417,7 @@ a.td-card:hover .td-go{gap:13px}
 <nav>
   <div class="nav-in">
     <a class="logo" href="index.html">PRERNA<span>.</span>SHARMA</a>
-    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html" class="active">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html" class="active">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="nav-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
   </div>
 </nav>
 
@@ -2544,7 +2700,7 @@ a.td-card:hover .td-go{gap:13px}
         <div class="eyebrow rv">What next</div>
         <h2 class="rv">I am open to anything that brings a <b>sharp learning curve</b>, in and around <b>GTM, Growth and Sales</b>.</h2>
       </div>
-      <div class="rv"><a class="btn-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+      <div class="rv lf-cta"><a class="btn-call" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="btn-wa ico" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -2571,7 +2727,7 @@ a.td-card:hover .td-go{gap:13px}
     <div class="foot-facts rv">
       <div class="ff"><span class="ff-label">Hometown</span><span class="ff-value">Delhi</span></div>
       <div class="ff"><span class="ff-label">Current location</span><span class="ff-value">GIFT City, Gujarat</span></div>
-      <div class="ff"><span class="ff-label">Notice period</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
+      <div class="ff"><span class="ff-label">Availability</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
       <div class="ff"><span class="ff-label">Relocation</span><span class="ff-value">Open to relocation</span></div>
     </div>
     <div class="foot-bottom">
@@ -2586,7 +2742,7 @@ a.td-card:hover .td-go{gap:13px}
 <nav>
   <div class="nav-in">
     <a class="logo" href="index.html">PRERNA<span>.</span>SHARMA</a>
-    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html" class="active">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html" class="active">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="nav-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
   </div>
 </nav>
 
@@ -2923,7 +3079,7 @@ a.td-card:hover .td-go{gap:13px}
         <div class="eyebrow rv">What next</div>
         <h2 class="rv">I am open to anything that brings a <b>sharp learning curve</b>, in and around <b>GTM, Growth and Sales</b>.</h2>
       </div>
-      <div class="rv"><a class="btn-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg>WhatsApp me</a></div>
+      <div class="rv lf-cta"><a class="btn-call" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="btn-wa ico" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -2950,7 +3106,7 @@ a.td-card:hover .td-go{gap:13px}
     <div class="foot-facts rv">
       <div class="ff"><span class="ff-label">Hometown</span><span class="ff-value">Delhi</span></div>
       <div class="ff"><span class="ff-label">Current location</span><span class="ff-value">GIFT City, Gujarat</span></div>
-      <div class="ff"><span class="ff-label">Notice period</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
+      <div class="ff"><span class="ff-label">Availability</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
       <div class="ff"><span class="ff-label">Relocation</span><span class="ff-value">Open to relocation</span></div>
     </div>
     <div class="foot-bottom">
@@ -2959,6 +3115,259 @@ a.td-card:hover .td-go{gap:13px}
   </div>
 </footer>
 </div>
+
+<div class="pv-page csd" data-page="doo-case-study.html" hidden>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="index.html">PRERNA<span>.</span>SHARMA</a>
+    <div class="nav-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="case-studies.html" class="active">Case studies</a><a href="resume.pdf" target="_blank" rel="noopener">Resume &#8595;</a><a class="nav-cta" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="nav-wa" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
+  </div>
+</nav>
+
+<section class="lead">
+  <div class="wrap">
+    <p class="kicker rv">Case study</p>
+    <h1 class="rv">DOO&#8217;s brand strategy and paid demand engine<span>.</span></h1>
+
+    <dl class="lead-meta rv">
+      <div><dt>Brand</dt><dd>DOO &middot; Connected home ecosystem</dd></div>
+      <div><dt>Category</dt><dd>Lifestyle brand &middot; Connected home &middot; B2C</dd></div>
+      <div><dt>What I owned</dt><dd>Brand strategy, demand pipeline, sales enablement</dd></div>
+      <div><dt>Demand channels</dt><dd>Meta &middot; Instagram &middot; Website</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 01 -->
+<section id="s1">
+  <div class="wrap">
+    <p class="sec-num rv">01</p>
+    <h2 class="sec-title rv">The numbers.</h2>
+
+    <div class="blk rv" style="margin-top:30px">
+      <div class="cs-head">
+        <div class="cs-result"><span class="lbl">Result</span><span class="big">&#8377;25L &#8594; &#8377;2Cr</span><span class="sub">~$30K &#8594; ~$240K ARR</span></div>
+        <div class="cs-stats">
+          <div class="cs-stat"><span class="v">~80%</span><span class="l">lower cost per lead</span></div>
+          <div class="cs-stat"><span class="v">~4X</span><span class="l">return on ad spend</span></div>
+          <div class="cs-stat"><span class="v">5M+</span><span class="l">reach</span></div>
+          <div class="cs-stat"><span class="v">40X</span><span class="l">website visits</span></div>
+          <div class="cs-stat"><span class="v">20X</span><span class="l">brand engagement</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section id="s2" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">02</p>
+    <h2 class="sec-title rv">The starting point.</h2>
+    <p class="sec-sub rv">Real revenue, all of it from network and referral. <b>Nothing repeatable.</b> The brand foundation did not exist either.</p>
+
+    <div class="blk rv" style="margin-top:30px">
+      <h3 class="blk-h">The market</h3>
+      <p>Roughly <b>$4B in India</b>, growing at a <b>~15% CAGR</b> toward <b>$25B by 2030</b> &#8212; and <b>no major player holding the category</b>.</p>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h alt">Existing products</h3>
+      <div class="sp-tags"><span>Smart switches</span><span>Smart curtains</span><span>Video doorbell</span><span>Motion sensor</span><span>Temperature sensor</span><span>IR remote</span><span>DOO Hub</span><span>DOO app</span></div>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h">Competition</h3>
+      <p>Roughly ten competitors, most white-labelling hardware and putting a name on it. DOO built the full stack &#8212; <b>firmware, cloud, app, hardware</b> &#8212; which made it a genuinely connected system rather than products that <b>couldn&#8217;t talk to each other</b>.</p>
+      <p>Every competitor sat in <b>home automation</b> or <b>smart homes</b>. DOO was building a different category: a <b>connected home experience</b>.</p>
+      <p>Against that, a smaller brand than the market leaders, <b>fewer SKUs, no regional presence</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section id="s3" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">03</p>
+    <h2 class="sec-title rv">Build credibility before spend.</h2>
+    <p class="sec-sub rv">Sharpen your landing before you spend money on running ads. <b>No amount of targeting fixes what happens after the click.</b></p>
+
+    <div class="blk rv" style="margin-top:34px">
+      <div class="pil">
+        <div class="pil-i">
+          <h4>Rebuilt as a lifestyle brand, not a product catalogue</h4>
+          <p>Real rooms, real people, the switch as evidence rather than subject. Reels as the format, different faces for different segments.</p>
+        </div>
+        <div class="pil-i">
+          <h4>Build the page as a funnel</h4>
+          <p>Product education, use cases, customer proof, customisation, blogs, etc. &#8212; so the brand did work beyond the feed.</p>
+        </div>
+      </div>
+      <div class="pull"><b>3X more engagement</b> on 1M+ organic reach than on 5M+ paid reach &#8212; though <b>intent ran much weaker on organic</b> than on paid.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section id="s4" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">04</p>
+    <h2 class="sec-title rv">Experiment until you find the right buyer.</h2>
+    <p class="sec-sub rv">What ran before was boosting &#8212; <b>broad terms, no structure, no way to read what wasn&#8217;t working.</b></p>
+
+    <div class="blk rv" style="margin-top:30px">
+      <div class="nums">
+        <div class="num-i"><div class="n">01</div><div><h4>Look for intent, not interest</h4><p>Not people interested in smart homes, home tours or interior videos, but people <b>already spending money on their house</b> &#8212; buying a first home, renovating, researching interiors.</p></div></div>
+        <div class="num-i"><div class="n">02</div><div><h4>Keep breaking the audience into sub-audiences</h4><p>Age, gender and persona each behaved differently, so the segments kept splitting until the buying roles were visible &#8212; the <b>decision makers</b> and the <b>decision influencers</b>. The two need different messages, and targeting and creative followed that split.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section id="s5" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">05</p>
+    <h2 class="sec-title rv">Deep dive on data to scale.</h2>
+    <p class="sec-sub rv">With a buyer that held up, the question stopped being who to reach and became <b>where to put the next rupee</b>.</p>
+
+    <div class="blk rv" style="margin-top:30px">
+      <div class="nums">
+        <div class="num-i"><div class="n">01</div><div><h4>Expand by evidence, not by map</h4><p>New geographies added one at a time, budget concentrated where acceptance was clearly higher. Splitting a national campaign into city-level campaigns cut cost per lead on its own &#8212; <b>metros stop reading as one market when you average them</b>.</p></div></div>
+        <div class="num-i"><div class="n">02</div><div><h4>Build a warm layer under the cold one</h4><p>Cold prospecting feeding retargeting beneath it, so expensive top-of-funnel reach produced a <b>cheap pool to convert from</b>.</p>
+          <div class="cs-stats" style="padding:20px 0 2px">
+            <div class="cs-stat"><span class="v">&#8377;85</span><span class="l">Cold CPL</span></div>
+            <div class="cs-stat"><span class="v">&#8377;27</span><span class="l">Retargeting CPL</span></div>
+            <div class="cs-stat"><span class="v">~68% lower</span><span class="l">Cold &#8594; retargeting</span></div>
+          </div>
+          <p style="margin-top:14px">Return on ad spend across the account: <b>~4X</b>.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section id="s6" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">06</p>
+    <h2 class="sec-title rv">Hold positioning when you are early.</h2>
+    <p class="sec-sub rv">Positioning was written after the brand surface was rebuilt and after the ad account had run long enough to say something. Locking it earlier would have caused <b>missing out on some important market sentiments</b>. Holding it open cost nothing when you are early.</p>
+
+    <div class="blk rv" style="margin-top:34px">
+      <h3 class="blk-h">What was decided, layer by layer</h3>
+      <dl class="layers">
+        <div class="layer"><dt>Brand belief</dt><dd><b>Ecosystem-first.</b> Built as one connected system from day one, not products made to talk to each other later.</dd></div>
+        <div class="layer"><dt>Core brand offering</dt><dd>A <b>connected home ecosystem</b> &#8212; not home automation, not a smart-home product line.</dd></div>
+        <div class="layer"><dt>Category architecture</dt><dd>A smart layer for Indian homes as the entry &#8594; the connected ecosystem as the spine &#8594; the intelligent home as the arc ahead.</dd></div>
+        <div class="layer"><dt>Customer truth</dt><dd><b>Aspiration-led at discovery</b> &#8212; the home is a reward and a signal, for a buyer who has earned this purchase. <b>Convenience-led further down</b>, in what sales actually said on the call.</dd></div>
+        <div class="layer"><dt>Competitive frame</dt><dd>Against the <b>Indian mid-market players</b>, won by being demonstrably more thoughtful rather than by claiming a separate league &#8212; while sitting in a different category from all of them: <b>connected home ecosystem</b>, not home automation or smart home.</dd></div>
+      </dl>
+      <p style="margin-top:20px">Each layer carried the alternatives considered and the reason they were set aside, based on the <b>product vision, market sentiment, brand goals, and competitors</b>.</p>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h alt">What was chosen</h3>
+      <div class="chain">
+        <p class="lbl">Final positioning</p>
+        <div class="steps">
+          <span class="st hi">A connected home ecosystem, designed as one system from day one</span>
+        </div>
+      </div>
+      <p style="margin-top:22px">A claim competitors who were white-labelling couldn&#8217;t make. Behind it, <b>150,000+ hours of R&amp;D over 6 years of IoT research</b>.</p>
+      <div class="pull">It also communicated the core competence without ever stating it: the <b>product, the technology, the app and the cloud were all ours</b>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section id="s7" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">07</p>
+    <h2 class="sec-title rv">Listen closely to sales.</h2>
+    <p class="sec-sub rv">I worked with the sales team through the period to pull consumer insight out of conversations and turn it into <b>targeting decisions and inputs for the product roadmap</b>.</p>
+
+    <div class="blk rv" style="margin-top:34px">
+      <h3 class="blk-h alt">One important insight</h3>
+      <p>For a large share of buyers, the reason to consider home automation at all was <b>security</b> &#8212; and the first product in that category is a door lock, followed by security cameras. DOO didn&#8217;t sell either, and buyers were choosing competitors on that gap alone.</p>
+      <div class="pull c">A door lock was added to the product pipeline and is <b>currently in POC</b>.</div>
+    </div>
+
+    <div class="blk rv">
+      <h3 class="blk-h">The insight that shaped positioning</h3>
+      <p>Buyers who did choose DOO kept naming the same reason: <b>the features in the app</b>. Those features existed because the hardware, firmware, app and cloud were all built in-house &#8212; nothing about them had to wait on someone else&#8217;s roadmap.</p>
+      <div class="pull">This validated the brand conviction on positioning it as a <b>connected home experience</b> rather than a fragmented home automation brand.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 -->
+<section id="s8" class="divide">
+  <div class="wrap">
+    <p class="sec-num rv">08</p>
+    <h2 class="sec-title rv">Keep a check on the funnel leak downwards.</h2>
+    <p class="sec-sub rv">Once the top of the funnel works, it stops being the constraint. Every lead now had to survive a consultation call and a demo, so the work moved to <b>finding and fixing what leaked below it</b>.</p>
+
+    <div class="blk rv" style="margin-top:34px">
+      <div class="pil">
+        <div class="pil-i">
+          <h4>Led sales enablement</h4>
+          <p>Structured how the team communicated over WhatsApp, kept brochures current, and built whatever material sales asked for on the way to a close.</p>
+        </div>
+        <div class="pil-i">
+          <h4>Ran day-to-day brand operations</h4>
+          <p>Including producing specific reels when sales needed one for a particular objection, segment or conversation.</p>
+        </div>
+      </div>
+      <div class="pull">An ad account doubles in a week. A sales function does not. <b>This layer is still being built.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="looking">
+  <div class="lf-band">
+    <div class="wrap">
+      <div class="lf-text">
+        <div class="eyebrow rv">What next</div>
+        <h2 class="rv">I am open to anything that brings a <b>sharp learning curve</b>, in and around <b>GTM, Growth and Sales</b>.</h2>
+      </div>
+      <div class="rv lf-cta"><a class="btn-call" href="https://calendly.com/iwbabds" target="_blank" rel="noopener">Book a call</a><a class="btn-wa ico" href="https://wa.me/917838971472" target="_blank" rel="noopener" aria-label="WhatsApp me" title="WhatsApp me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 00-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 016.9 12.4l-.25.4.86 3.1-3.2-.84-.38.22a8.1 8.1 0 01-11.9-9.9A8.1 8.1 0 0112.04 3.8zm-3.1 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.2.87 2.35.99 2.5.12.17 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.6 1.66-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.77.96-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47z"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="eyebrow rv">Contact</div>
+        <h2 class="rv">Let's talk.</h2>
+        <div class="foot-info rv">
+          <p>Prerna Sharma</p>
+          <p class="fi-label">Last employer</p>
+          <p>Senior Manager, Sales &amp; Marketing</p>
+          <p>smartSense Consulting Solutions Pvt. Ltd.</p>
+        </div>
+      </div>
+      <div class="foot-links rv">
+        <a href="mailto:iwbabds@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>iwbabds@gmail.com</a>
+        <a href="https://www.linkedin.com/in/prerna-sharma-2a5a88181/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 00-4 0"/></svg>LinkedIn · Prerna Sharma</a>
+        <a href="tel:+917838971472"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>+91 7838-971-472</a>
+      </div>
+    </div>
+    <div class="foot-facts rv">
+      <div class="ff"><span class="ff-label">Hometown</span><span class="ff-value">Delhi</span></div>
+      <div class="ff"><span class="ff-label">Current location</span><span class="ff-value">GIFT City, Gujarat</span></div>
+      <div class="ff"><span class="ff-label">Availability</span><span class="ff-value">Can join in 0&#8211;15 days</span></div>
+      <div class="ff"><span class="ff-label">Relocation</span><span class="ff-value">Open to relocation</span></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© Prerna Sharma.</span>
+    </div>
+  </div>
+</footer>
+</div>
+
 
 <script>
 const panes=[...document.querySelectorAll('.pv-page')];
