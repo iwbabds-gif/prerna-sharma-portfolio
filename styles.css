@@ -1297,3 +1297,9 @@ a.td-card:hover .td-go{gap:13px}
 .btn-cal.ico{width:46px;height:46px;padding:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--olive-soft);color:var(--olive-deep)}
 .btn-cal.ico:hover{background:var(--clay-soft)}
 .btn-cal.ico svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+
+.lead-grid > div > .dom-line:last-child{margin-bottom:8px}
+
+.nav-cta{display:inline-flex;align-items:center;gap:7px}
+.nav-cta .wa-mark{width:16px;height:16px;fill:currentColor;stroke:none;flex-shrink:0}
+.btn-call .wa-mark{width:19px;height:19px;fill:currentColor;stroke:none;flex-shrink:0;margin-left:8px}
