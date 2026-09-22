@@ -1303,3 +1303,28 @@ a.td-card:hover .td-go{gap:13px}
 .nav-cta{display:inline-flex;align-items:center;gap:7px}
 .nav-cta .wa-mark{width:16px;height:16px;fill:currentColor;stroke:none;flex-shrink:0}
 .btn-call .wa-mark{width:19px;height:19px;fill:currentColor;stroke:none;flex-shrink:0;margin-left:8px}
+
+/* --- DOO feature card, responsive (must stay last: later edits narrowed the rail and
+       were overriding the earlier breakpoints) --- */
+@media(max-width:860px){
+  .wp-feature{grid-template-columns:1fr;gap:20px;padding:22px}
+  .wf-l{border-right:0;border-bottom:1px solid var(--line);padding-right:0;padding-bottom:18px;display:block}
+  .wf-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .wf-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .wf-l .own-h{margin-top:18px;padding-top:0}
+  .wf-own{margin-bottom:0}
+}
+@media(max-width:560px){
+  .wp-feature{padding:20px 18px;border-radius:16px;margin-top:28px}
+  .wf-eyebrow{font-size:10px;letter-spacing:.12em}
+  .wp-feature h3{font-size:19px;margin-top:9px}
+  .wf-big{font-size:24px;margin-top:14px}
+  .wf-own span{font-size:11px;padding:5px 9px}
+  .wf-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 12px;padding-bottom:14px}
+  .wf-metrics .v{font-size:15px}
+  .wf-gs{margin-top:16px}
+  .wf-steps{grid-template-columns:1fr;gap:7px;margin-top:12px}
+  .wf-step{padding:9px 11px;font-size:12px}
+  .wf-cta{font-size:11.5px;padding:8px 15px;margin-top:16px}
+  .wf-cta svg{width:11px;height:11px}
+}
